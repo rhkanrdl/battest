@@ -2447,7 +2447,7 @@ body div#content.main section.main-equipment div.container fieldset {
   border: none;
   background: #fff;
   border-radius: 13px;
-  width: 420px;
+  width: 270px;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -2456,6 +2456,7 @@ body div#content.main section.main-equipment div.container fieldset {
 @media (min-width: 1200px) {
   body div#content.main section.main-equipment div.container fieldset {
     margin: 0 0 40px auto;
+    width: 420px;
   }
 }
 

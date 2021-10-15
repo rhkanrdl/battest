@@ -1171,12 +1171,13 @@ body {
                         border:none;
                         background:#fff;
                         border-radius:13px;
-                        width:420px;
+                        width:270px;
                         overflow:hidden;
                         @include drop-shadow($x:0,$y: 3px, $blur: 6px, $spread: 0, $alpha: 0.16);
 
                         @media (min-width: $screen-size-pc) {
                             margin:0 0 40px auto;
+                            width:420px;
     
                         }
 
