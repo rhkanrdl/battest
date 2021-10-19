@@ -2864,12 +2864,12 @@ body div#content.sub section.sub-head div.container article.sub-menu ul.submenu.
 
 body div#content.sub section.sub-content div.container {
   font-size: 14px;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container {
-    padding: 50px 20px;
+    padding: 60px 20px;
   }
 }
 
@@ -2877,14 +2877,180 @@ body div#content.sub section.sub-content div.container h3.stitle {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
-  margin: 0 0 30px;
+  margin: 0 0 50px;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container h3.stitle {
     font-size: 38px;
-    margin: 0 0 50px;
+    margin: 0 0 60px;
   }
+}
+
+body div#content.sub section.sub-content div.container h4.btitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container h4.btitle {
+    font-size: 26px;
+    margin: 0 0 40px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 p.image-mobile {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 p.image-mobile {
+    display: none;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 p.image-mobile img {
+  max-width: 100%;
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 p.image-pc {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 p.image-pc {
+    display: block;
+    margin-bottom: 80px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 p.image-pc img {
+  max-width: 100%;
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list {
+  list-style: none;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li {
+    padding: 30px 30px 30px 330px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li span.tag {
+  display: block;
+  background: #0A79CE;
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  left: -1px;
+  top: -1px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li span.tag {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5 {
+  margin: 0 0 20px;
+  font-size: 0;
+  background: #fff;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5 {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency01 {
+  background: url(../images/agency01.png) no-repeat #fff center/204px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency01 {
+    width: 208px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency02 {
+  background: url(../images/agency02.png) no-repeat #fff center/224px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency02 {
+    width: 216px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency03 {
+  background: url(../images/agency03.png) no-repeat #fff center/152px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency03 {
+    width: 146px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency04 {
+  background: url(../images/agency04.png) no-repeat #fff center/205px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li h5.agency04 {
+    width: 208px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li strong {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li p {
+  position: relative;
+  margin: 0 0 6px;
+  padding: 0 0 0 14px;
+  word-break: keep-all;
+}
+
+body div#content.sub section.sub-content div.container article.sub-agency01 ul.agency-list li p::before {
+  content: "-";
+  position: absolute;
+  left: 0;
 }
 
 body footer#footer {
