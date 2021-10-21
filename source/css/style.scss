@@ -1688,6 +1688,219 @@ body {
                     }
 
 
+                    article.login {
+                        border:1px solid #ccc;
+                        margin:0 auto 80px;
+                        padding:40px;
+                        @include drop-shadow($x:0,$y: 3px, $blur: 6px, $spread: 0, $alpha: 0.25);
+        
+                        @media (min-width: $screen-size-pc) {
+                            padding:50px;
+                            width:500px;
+                        }
+                        
+                        fieldset {
+                            border:none;
+                            margin:0;
+                            padding:0;
+        
+                            input[type="text"],
+                            input[type="password"] {
+                                display:block;
+                                height:50px;
+                                width:100%;
+                                border:none;
+                                border:1px solid #ccc;
+                                background:#f4f4f4;
+                                font-size:16px;
+                                outline:none;
+                                margin-bottom:20px;
+                                padding:0 10px;
+        
+                                @media (min-width: $screen-size-pc) {
+                                    height:60px
+                                }
+        
+                                &:focus {
+                                    background:#efefef;
+                                }
+                            }
+        
+                            button.submit {
+                                border:none;
+                                width:100%;
+                                margin:20px 0;
+                                height:50px;
+                                background:#0066cc;
+                                color:#fff;
+                                font-size:16px;
+        
+                                @media (min-width: $screen-size-pc) {
+                                    height:60px
+                                }
+                            }
+        
+                            ul.tools {
+                                margin:20px 0;
+                                padding:0;
+                                list-style:none;
+                                text-align:center;
+        
+                                li {
+                                    a {
+                                        text-decoration:underline;
+                                        color:#0066CC;
+                                    }
+                                }
+        
+                            }
+        
+                            div.sign {
+                                text-align:center;
+                                
+                                a {
+                                    display:block;
+                                    margin:20px 0;
+                                    background:#555;
+                                    line-height:46px;
+                                    color:#fff;
+        
+                                }
+                            }
+        
+                        }
+                    }
+
+                    article.find {
+                        border:1px solid #ccc;
+                        margin:0 auto 80px;
+                        padding:40px;
+                        @include drop-shadow($x:0,$y: 3px, $blur: 6px, $spread: 0, $alpha: 0.25);
+        
+                        @media (min-width: $screen-size-pc) {
+                            padding:50px;
+                            width:500px;
+                        }
+                        
+                        fieldset {
+                            border:none;
+                            margin:0;
+                            padding:0;
+        
+                            div.find-type {
+                                background:#0066cc;
+                                padding:10px 10px 0;
+                                margin:-40px -40px  50px;
+                                font-size:0;
+                                
+                                @media (min-width: $screen-size-pc) {
+                                    margin:-50px -50px  50px;
+                                }
+        
+                                input {
+                                    display:none;
+                                }
+        
+                                label {
+                                    display:inline-block;
+                                    font-size:16px;
+                                    width:50%;
+                                    text-align:center;
+                                    background:transparent;;
+                                    line-height:50px;
+                                    color:#fff;
+                                    
+                                    
+                                }
+        
+                                input:checked + label {
+                                    background:#fff;
+                                    color:#0066cc;
+                                }
+                            }
+        
+                            div.find-form {
+        
+                                display:none;
+        
+                                &.on {
+                                    display:block;
+                                }
+        
+                                dl{
+                                    dt {
+                                        float:left;
+                                        line-height:50px;
+                                    }
+            
+                                    dd {
+                                        margin:0 0 10px 60px;
+                                        
+            
+                                        input[type="text"] {
+                                            display:block;
+                                            height:50px;
+                                            width:100%;
+                                            border:1px solid #ccc;
+                                            font-size:16px;
+                                            outline:none;
+                                            border-radius:5px;
+                                            padding:0 20px;
+            
+                                            &:focus {
+                                                background:#efefef;
+                                                @include drop-shadow($x:0,$y: 3px, $blur: 6px, $spread: 0, $alpha: 0.25);
+                                            }
+                                        }
+                                        
+            
+                                        select {
+                                            display:block;
+                                            height:50px;
+                                            width:100%;
+                                            border:1px solid #ccc;
+                                            font-size:16px;
+                                            outline:none;
+                                            border-radius:5px;
+                                            padding:0 20px;
+            
+                                            &:focus {
+                                                background:#efefef;
+                                                @include drop-shadow($x:0,$y: 3px, $blur: 6px, $spread: 0, $alpha: 0.25);
+                                            }
+        
+                                        }
+            
+                                    }
+                                }
+            
+            
+                                button.btn.main {
+                                    border:none;
+                                    width:100%;
+                                    margin:20px 0;
+                                    height:50px;
+                                    background:#0066cc;
+                                    color:#fff;
+                                    font-size:16px;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        height:60px
+                                    }
+                                }
+        
+                                div.result {
+                                    background:#efefef;
+                                    font-size:14px;
+                                    padding:30px 10px;
+                                }
+        
+                            }
+        
+        
+                        }
+                    }
+        
                     article.sub-agency01 {
 
                         p.image-mobile {
