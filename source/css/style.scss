@@ -671,8 +671,7 @@ body {
               color: #fff;
               border-top: 1px solid #fff;
               font-weight: 600;
-              opacity: 0;
-              @include ani(1.5s);
+              opacity: 1;
               transition-delay: 0.5s;
 
               @media (min-width: $screen-size-pc) {
@@ -716,8 +715,8 @@ body {
 
                   @media (min-width: $screen-size-pc) {
                     width: 750px;
-                    height: 129px;
-                    top: -159px;
+                    height: 149px;
+                    top: -179px;
                   }
                 }
               }
@@ -840,6 +839,7 @@ body {
 
         button.issue-next {
           position: absolute;
+          z-index:1000;
           bottom: 20vh;
           left: 50%;
           margin: 0;
@@ -861,14 +861,15 @@ body {
 
       section.main-news {
         position: relative;
+        z-index: 1000;
 
         div.container {
           position: absolute;
+          z-index:500;
           top: -60px;
           height: 60px;
           left: 50%;
           transform: translateX(-50%);
-          z-index: 800;
           background: #35374b;
           padding: 0 20px;
           overflow: hidden;

@@ -23,11 +23,8 @@ $(function(){
         // arrows:false,
         autoplay:true,
         autoplaySpeed:4000,
+        fade:true,
         speed: 1000,
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        pauseOnHover: false,
         nextArrow: ".issue-next",
     
     });
