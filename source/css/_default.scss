@@ -907,7 +907,7 @@ div.input {
 
 			i {
 				position: relative;
-				top: 5px;
+				top: 2px;
 				font-size: 18px;
 				color: #eb2828;
 				font-style: normal;
@@ -991,6 +991,14 @@ div.input {
 						@media (min-width: $screen-size-pc) {
 							display: inline;
 						}
+					}
+				}
+
+				&.inline {
+					
+
+					@media (min-width: $screen-size-pc) {
+						display:inline-block;
 					}
 				}
 			}
@@ -1107,7 +1115,8 @@ div.input {
 				}
 			}
 
-			input[type="radio"] {
+			input[type=radio],
+			input[type=checkbox] {
 				display: none;
 			}
 
@@ -1137,7 +1146,7 @@ div.input {
 				}
 			}
 
-			input:checked + label {
+			input[type=radio]:checked + label {
 				&::before {
 					border-color: #1c7cc2;
 				}
@@ -1151,6 +1160,23 @@ div.input {
 					width: 10px;
 					height: 10px;
 					border-radius: 50%;
+					background: #1c7cc2;
+				}
+			}
+
+			input[type=checkbox]:checked + label {
+				&::before {
+					border-color: #1c7cc2;
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 5px;
+					top: 7px;
+					width: 10px;
+					height: 10px;
 					background: #1c7cc2;
 				}
 			}
@@ -1184,6 +1210,13 @@ div.input {
 					@media (min-width: $screen-size-pc) {
 						top:19px;
 					}
+				}
+			}
+
+			input[type=checkbox] + label {
+
+				&::before {
+					border-radius:0;
 				}
 			}
 

@@ -8,6 +8,11 @@ $(function(){
 
 
 
+    $("button.check-co").click(function() {
+        $("#modal-co").addClass("on");
+    });
+    
+    
 
     $(window).on("resize", function(){
         $("nav#main-menu h3 a").unbind();
@@ -171,7 +176,6 @@ function outlink() {
         $(this).toggleClass("on");
     });
 }
-
 
 
 

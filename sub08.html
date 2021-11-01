@@ -155,8 +155,79 @@
         </nav>
         <!-- E:main_menu -->
 
-
-
+        <div id="modal-co" class="modal">
+ 
+            <!-- Modal content -->
+            <div class="modal-content big">
+                      <h2>사업자번호 검색 <button class="close">닫기</button></h2>
+                      <div class="inside">
+        
+                        <div class="co-check">
+                            
+                            <span class="select-outline">
+                                <span>@</span>
+                                <select id="mail" name="mail">
+                                    <option value="">사업자번호</option>
+                                </select>
+                            </span>
+                            <div class="search-box">
+                                <input type="text">
+                                <button><i class="bx bx-search"></i>검색</button>
+                            </div>
+        
+                        </div>
+        
+        
+        
+                        <ul class="co-list">
+                            <li>
+                                <a href="">
+                                    <p class="select"><span>선택</span><u><button>선택</button></u></p>
+                                    <p class="num"><span>사업자번호</span><u>03-5624-5982255</u></p>
+                                    <p class="name"><span>기업/기관명</span><u>제주테크노파크</u></p>
+                                    <p class="ceo"><span>대표자명</span><u>홍길동</u></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="select"><span>선택</span><u><button>선택</button></u></p>
+                                    <p class="num"><span>사업자번호</span><u>03-5624-5872255</u></p>
+                                    <p class="name"><span>기업/기관명</span><u>제주테크노파크</u></p>
+                                    <p class="ceo"><span>대표자명</span><u>홍길동</u></p>
+                                </a>
+                            </li>
+            
+                    
+                    
+                    
+                    
+                    
+                        </ul>
+            
+                        <article class="pagenation">
+                    
+                                            <a href="?pageIndex=1" title="이전 페이지로 이동" class="move" onclick="linkPage(1);return false; ">이전<i class="bx bx-chevron-left " aria-hidden="true"></i></a>
+                                            <strong>1</strong>
+                                            <a href="?pageIndex=2" onclick="linkPage(2);return false; " title="2 페이지로 이동">2</a>
+                                            <a href="?pageIndex=3" onclick="linkPage(3);return false; " title="3 페이지로 이동">3</a>
+                                            <a href="?pageIndex=11" title="다음 페이지로 이동" class="move" onclick="linkPage(6);return false; ">다음<i class="bx bx-chevron-right" aria-hidden="true"></i></a>
+                                     
+                                     
+                        </article>          
+        
+        
+                      </div>
+        
+        
+            
+        
+        
+        
+        
+        
+            </div>
+        
+          </div>
 
 
         <!-- S:subContent -->
@@ -234,84 +305,162 @@
                                 <dd>
                                     <input id="company" type="text">
                                 </dd>
-    
-                                <dt><label for="datetime-first">이용희망기간</label> <i>*</i></dt>
+                                <dt><label for="biz-number">사업자 등록번호</label> <i>*</i></dt>
                                 <dd>
-                                    <p class="rows">
-                                        <input id="datetime-first" class="date" type="date">
-                                        <u>-</u>
-                                        <input class="date" type="date">
-                                    </p>
-                                    <p class="rows">
-                                        
-                                        <span class="select-outline time">
-                                            <select>
-                                                <option value="">01</option>
-                                            </select>
-                                        </span>
-                                        <u>시</u>
-                                        <span class="select-outline time">
-                                            <select>
-                                                <option value="">01</option>
-                                            </select>
-                                        </span>
-                                        <u>분</u>
-                                        <u>-</u>
-                                        
-                                        <span class="select-outline time">
-                                            <select>
-                                                <option value="">01</option>
-                                            </select>
-                                        </span>
-                                        <u>시</u>
-                                        <span class="select-outline time">
-                                            <select>
-                                                <option value="">01</option>
-                                            </select>
-                                        </span>
-                                        <u>분</u>
-    
-                                        <button class="check-reserv">예약가능 확인</button>
-                                    </p>
-                                        
-                                    <span class="info">
-                                        이용희망기간은 실제 이용기간과 다를 수 있습니다. (담당자가 접수처리시 전화로 실제 이용기간을 확정하게 됩니다.)
-                                    </span>
-                                        
-                                    <span class="info red">
-                                        이용희망기간의 예상 이용시간과 이용료는 하단 '사용료 계산 및 산출내역'을 확인바랍니다.
-                                    </span>
+                                    <input id="biz-number" type="text" class="with-button" readonly="" value="01-235-355620">
+                                    <button class="check-co">검색</button>
+                                </dd>
+                                <dt><label for="address">주소</label> <i>*</i></dt>
+                                <dd>
+                                    <input id="biz-number" type="text" class="date" readonly="" value="56320">
+                                    <button class="check-zip">우편번호 검색</button>
+                                    <input id="address" type="text" class="" readonly="" value="제주 제주시">
+                                    <input id="address2" type="text" class="" value="나머지 주소를 입력하세요">
                                 </dd>
     
-                                <dt><label for="category">사용구분</label> <i>*</i></dt>
+                                <dt><label for="co-size">기업규모</label> <i>*</i></dt>
                                 <dd>
     
                                     <span class="select-outline full">
-                                        <select id="cagetory">
-                                            <option value="">분석시험의뢰</option>
+                                        <select id="co-size">
+                                            <option value="">소기업</option>
                                         </select>
                                     </span>
                                 </dd>
-    
-                                <dt><label for="purpose">이용목적</label> <i>*</i></dt>
+                                <dt><label for="sectors">주요업종</label> <i>*</i></dt>
                                 <dd>
-                                    <input id="purpose" type="text">
+                                    <input id="sectors" type="text">
+                                </dd>
+
+                            </dl>
+
+
+                            <h4 class="btitle">신청개요</h4>
+
+                            <dl>
+
+                                <dt><label for="sectors">신청분야</label> <i>*</i></dt>
+                                <dd>
+                                    <input id="type01" name="type" type="checkbox"><label for="type01">재제조배터리모듈</label>
+                                    <input id="type02" name="type" type="checkbox"><label for="type02">재제조배터리팩</label>
+                                    <input id="type03" name="type" type="checkbox"><label for="type03">재제조배터리 전력변환장치</label>
+                                    <input id="type04" name="type" type="checkbox"><label for="type04">재제조배터리 활용시스템</label>
+                                </dd>
+
+                                
+                                <dt><label for="datetime-first">희망일자</label> <i>*</i></dt>
+                                <dd>
+                                    <p class="rows inline"> 
+                                        <strong>1순위</strong>
+                                        <input id="datetime-first" class="date" type="date">
+                                    </p>
+                                    <p class="rows inline"> 
+                                        <strong>2순위</strong>
+                                        <input id="datetime-first" class="date" type="date">
+                                    </p>
+                                    <p class="rows inline"> 
+                                        <strong>3순위</strong>
+                                        <input id="datetime-first" class="date" type="date">
+                                    </p>
+                                    <span class="info">
+                                        ※접수처리기간(7일) 고려하여 희망일자 순위 기재
+                                    </span>
+                                        
+                                    <span class="info">
+                                        ※희망일자는 월/일/시간대(오전,오후) 단위로 기재
+                                    </span>
+                                        
+                                    <span class="info">
+                                        ※희망일자는 제출일 기준 1개월 이내 
+                                    </span>
+                                        
+                                    <span class="info">
+                                        ※희망일자와 실제 컨설팅일자는 다를 수 있으며, 담당자가 접수처리 시 전화 및 메일로 일자 협의 후 접수완료됩니다.
+                                    </span>
                                 </dd>
     
-                                <dt><label for="sample">시료명</label> <i>*</i></dt>
+                                <dt><label for="purpose">방문인원</label> <i>*</i></dt>
                                 <dd>
-                                    <input id="sample" type="text">
+    
+                                    <span class="select-outline full">
+                                        <select id="co-size">
+                                            <option value="">1명</option>
+                                        </select>
+                                    </span>
+                                    <span class="info">
+                                        ※원활한 컨설팅 진행을 위해 방문인원은 5인 미만으로 제한합니다.
+                                    </span>
+                                </dd>
+                                <dt><label for="prop-name">담당자</label> <i>*</i></dt>
+                                <dd>
+                                    <input id="prop-name" type="text" readonly="" value="홍길동">
+                                </dd>
+                                <dt><label for="mail">이메일</label> <i>*</i></dt>
+                                <dd>
+                                    <input type="text" class="with-mail">
+                                    <span class="select-outline mail">
+                                        <span>@</span>
+                                        <select id="mail" name="mail">
+                                            <option value="">직접입력(선택)</option>
+                                        </select>
+                                    </span><button >이메일 확인</button>
+    
+                                </dd>
+                                <dt><label for="mobile-first">휴대전화</label> <i>*</i></dt>
+                                <dd>
+                                    <input id="mobile-first" type="text" class="tel">
+                                    <u>-</u>
+                                    <input type="text" class="tel">
+                                    <u>-</u>
+                                    <input type="text" class="tel">
+    
                                 </dd>
     
-                                <dt><label for="sample-num">시료수</label> <i>*</i></dt>
-                                <dd>
-                                    <input id="sample-num" type="text">
-                                    <span class="info">숫자 1이상의 정수를 입력</span>
-                                </dd>
-    
-                                <dt>특이사항</dt>
+                            </dl>
+
+
+                            <h4 class="btitle">신청내용</h4>
+
+                            <dl>
+
+                                <dt><label for="">신청동기</label> <i>*</i></dt>
                                 <dd>
                                     <textarea></textarea>
+                                    <span class="info">
+                                        ※1000byte 이내로 입력바랍니다.
+                                    </span>
+                                </dd>
+
+                                <dt><label for="">요청내용</label> <i>*</i></dt>
+                                <dd>
+                                    <textarea></textarea>
+                                    <span class="info">
+                                        ※1000byte 이내로 입력바랍니다.
+                                    </span>
+                                </dd>
+
+                                <dt><label for="">활용목적</label> <i>*</i></dt>
+                                <dd>
+                                    <textarea></textarea>
+                                    <span class="info">
+                                        ※1000byte 이내로 입력바랍니다.
+                                    </span>
+                                </dd>
+
+                                <dt><label for="">예상성과</label> <i>*</i></dt>
+                                <dd>
+                                    <textarea></textarea>
+                                    <span class="info">
+                                        ※1000byte 이내로 입력바랍니다.
+                                    </span>
+                                </dd>
+
+                                <dt><label for="">기타 요청사항</label> <i>*</i></dt>
+                                <dd>
+                                    <textarea></textarea>
+                                    <span class="info">
+                                        ※1000byte 이내로 입력바랍니다.
+                                    </span>
                                 </dd>
     
                             </dl>
