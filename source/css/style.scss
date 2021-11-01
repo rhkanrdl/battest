@@ -2910,6 +2910,391 @@ body {
             }
           }
 
+
+          article.sub-statute {
+            padding-bottom: 30px;
+            ul.link {
+                list-style: none;
+                margin: 40px 0 26px;
+                padding: 0;
+                font-size: 0;
+                @media (min-width: $screen-size-pc) {
+                    text-align: center;
+                    margin: 60px 0 34px;
+                }
+
+                li {
+                    @media (min-width: $screen-size-pc) {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    a {
+                        position: relative;
+                        display: block;
+                        border: 1px solid #ccc;
+                        background: #f2f7fe;
+                        font-size: 14px;
+                        margin-bottom: 14px;
+
+                        @media (min-width: $screen-size-pc) {
+                            width: 340px;
+                            height: 140px;
+                            margin: 0 25px 24px;
+                            text-align: left;
+
+                            &:hover {
+                                border-color: #3268b2;
+                                background: #f1f7ff;
+                                @include drop-shadow(0, 3px, 6px, 0, 0.25);
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            right: 20px;
+                            top: 30px;
+                            width: 30px;
+                            height: 30px;
+                            background: url("../images/icon-arrow-circle.svg") no-repeat
+                            center / 100% auto;
+
+                            @media (min-width: $screen-size-pc) {
+                                width: 40px;
+                                height: 40px;
+                                top: 50px;
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        a {
+                            padding: 38px 20px 20px 60px;
+                            font-size: 24px;
+                            font-weight: 600;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding: 60px 30px 30px 66px;
+                                font-size: 26px;
+                            }
+
+                            strong {
+                                display: block;
+                                position: absolute;
+                                left: 20px;
+                                top: 16px;
+                                font-size: 0;
+                                width: 154px;
+                                height: 30px;
+                                background: url("../images/logo-msit.svg") no-repeat center /
+                                    auto 100%;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width: 191px;
+                                    height: 37px;
+                                    top: 32px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            padding: 16px 20px 20px 60px;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding: 38px 30px 30px 64px;
+                            }
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                left: 18px;
+                                top: 16px;
+                                width: 34px;
+                                height: 34px;
+                                background: url("../images/logo-law.png") no-repeat center /
+                                    100% auto;
+
+                                @media (min-width: $screen-size-pc) {
+                                    top: 38px;
+                                }
+                            }
+
+                            strong {
+                                display: block;
+                                font-size: 24px;
+                                font-weight: 600;
+                                color: #0d3171;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 20px;
+                color: #333333;
+                line-height: 60px;
+                background: #f0f0f0;
+                padding: 0 10px;
+                margin: 30px 0 10px;
+
+                @media (min-width: $screen-size-pc) {
+                    font-size: 22px;
+                    line-height: 66px;
+                    padding: 0 20px;
+                }
+            }
+
+            p.info {
+                margin: 0;
+                text-align: right;
+                font-size: 15px;
+
+                @media (min-width: $screen-size-pc) {
+                    font-size: 17px;
+                }
+            }
+
+            h5 {
+                position: relative;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 20px 0 10px;
+
+                @media (min-width: $screen-size-pc) {
+                    font-size: 20px;
+                    margin: 30px 0 20px;
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                    width: 18px;
+                    height: 18px;
+                    background: url("../images/bullet01.svg") no-repeat center / 100%
+                    auto;
+
+                    @media (min-width: $screen-size-pc) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+            p.text {
+                font-size: 15px;
+                margin:0 0 10px;
+
+                @media (min-width: $screen-size-pc) {
+                    font-size: 17px;
+                }
+
+            }
+
+            ul.text {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                & > li {
+                    position: relative;
+                    padding: 0 0 8px 20px;
+                    word-break: keep-all;
+                    font-size: 15px;
+
+                    @media (min-width: $screen-size-pc) {
+                        padding: 0 0 10px 24px;
+                        font-size: 17px;
+                    }
+
+                    strong {
+                        position: absolute;
+                        font-weight: 400;
+                        left: 0;
+                    }
+
+                    ul {
+                        list-style: none;
+                        margin: 10px 0;
+                        padding: 0;
+
+                        & > li {
+                            position: relative;
+                            padding: 0 0 8px 20px;
+                            word-break: keep-all;
+                            font-size: 15px;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding: 0 0 6px 24px;
+                                font-size: 17px;
+                            }
+
+                            strong {
+                                position: absolute;
+                                font-weight: 400;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+          
+		article.sub-location {
+			padding:0 0 30px;
+
+			@media (min-width: $screen-size-pc) {
+				padding:0 0 40px;
+			}
+				div.maps {
+					height:300px;
+					background:#eee;
+					margin:0 -10px;
+
+					@media (min-width: $screen-size-pc) {
+						margin:0;
+						height:500px;
+					}
+				}
+
+				&>ul {
+					list-style:none;
+					margin:0;
+					padding:20px 0 40px;
+					font-size:16px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size:22px;
+						padding:30px 0 60px;
+					}
+
+					li {
+						position:relative;
+						padding:0 0 10px 34px;
+						word-break:keep-all;
+
+						@media (min-width: $screen-size-pc) {
+							padding:0 0 16px 44px;
+						}
+
+						i {
+							position:absolute;
+							left:0;
+							top:0;
+							width:24px;
+							background:#555;
+							color:#fff;
+							text-align:center;
+							line-height:24px;
+							font-size:12px;
+							border-radius:10px;
+
+							@media (min-width: $screen-size-pc) {
+								width:34px;
+								line-height:34px;
+								font-size:20px;
+							}
+						}
+					}
+				}
+
+				h4 {
+					font-size:18px;
+					color:#1C7CC2;
+					margin:0 0 10px;
+
+					@media (min-width: $screen-size-pc) {
+						font-size:26px;
+						margin:0 0 20px;
+					}
+				}
+
+				dl {
+					padding:0;
+					margin:0;
+
+					dt {
+						display:block;
+						background:#F5F5F5;
+						font-size:16px;
+						padding:5px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:20px;
+							padding:15px;
+						}
+
+						i {
+							color:#1C7CC2;
+							margin:0 6px 0 0;
+						}
+					}
+
+					dd {
+						margin:0 0 20px;
+						padding:10px 0;
+						border-bottom:1px solid #ccc;
+						font-size:14px;
+
+						@media (min-width: $screen-size-pc) {
+							font-size:16px;
+							padding:20px 10px;
+							margin:0 0 30px;
+						}
+
+						ul {
+							list-style:none;
+							margin:0;
+							padding:0;
+
+							li {
+								position:relative;
+								padding:0 0 14px 80px;
+								color:#555;
+
+								@media (min-width: $screen-size-pc) {
+									padding:0 0 24px 100px;
+								}
+
+								strong {
+									position:absolute;
+									left:0;
+									top:-1px;
+									font-weight:400;
+									font-size:15px;
+									color:#333;
+
+									@media (min-width: $screen-size-pc) {
+										font-size:18px;
+									}
+
+									&::before {
+										content:"·";
+										padding:0 4px 0 0;
+									}
+								}
+							}
+						}
+
+					}
+				}
+
+
+		}
+
+
+
           article.board-list {
             padding: 0 0;
 
