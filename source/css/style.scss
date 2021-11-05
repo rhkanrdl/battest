@@ -2611,7 +2611,7 @@ body {
                 width: 350px;
                 line-height: 100px;
                 font-size: 22px;
-                margin: 0 0 134.4px;
+                margin: 0 0 101.4px;
               }
 
               &.gray {
@@ -2634,19 +2634,23 @@ body {
                 left: 390px;
 
                 &.text01 {
-                  top: 130px;
+                  top: 32px;
                 }
 
                 &.text02 {
-                  top: 600px;
+                  top: 234px;
                 }
 
                 &.text03 {
-                  top: 980px;
+                  top: 638px;
                 }
 
                 &.text04 {
-                  top: 1300px;
+                  top: 1042px;
+                }
+
+                &.text05 {
+                  top: 1454px;
                 }
               }
 
@@ -2658,6 +2662,10 @@ body {
 
                 @media (min-width: $screen-size-pc) {
                   font-size: 18px;
+                }
+
+                p {
+                  margin:0;
                 }
               }
 
