@@ -857,10 +857,37 @@ body {
             }
           }
         }
+
+        div.contact {
+          position:absolute;
+          left:10px;
+          right:10px;
+          bottom:120px;
+          font-size:14px;
+          background:#8abb2a;
+          z-index:1000;
+          padding:30px 20px;
+
+          @media (min-width: $screen-size-pc) {
+            right:auto;
+            left:50%;
+            width:400px;
+            margin-left:-200px;
+            bottom:300px;
+
+          }
+
+          strong {
+            display:block;
+            margin-bottom:10px;
+            font-size:18px;
+          }
+        }
       }
 
       section.main-news {
         position: relative;
+        z-index:1000;
 
         div.container {
           position: absolute;
