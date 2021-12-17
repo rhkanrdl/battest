@@ -769,6 +769,38 @@ button {
 					width: calc(100% - 130px);
 				}
 			}
+
+			ul.education { 
+				list-style:none;
+				margin:0 0 20px;
+				padding:0;
+
+				li {
+					margin:0 0 10px;
+
+					label {
+						display:inline-block;
+						line-height:42px;
+						width:80px;
+						font-size:16px;
+					}
+
+					input {
+						font-size:16px;
+						height:42px;
+						border:1px solid #ccc;
+						padding:0 10px;
+						width:calc(100% - 80px);
+
+						&:read-only {
+							background:#efefef;
+							color:#666;
+							font-weight:600;
+						}
+					}
+
+				}
+			}
 		}
 	}
 }
