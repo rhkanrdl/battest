@@ -1203,6 +1203,14 @@ div.input {
 				}
 			}
 
+			input[type=date] + .select-outline {
+
+
+				@media (min-width: $screen-size-pc) {
+					margin-left:10px;
+				}
+			}
+
 			button {
 				width: 124px;
 				height: 40px;

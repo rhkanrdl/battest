@@ -227,18 +227,41 @@
         
         
         
+                        <h4 class="btitle">예약접수</h4>
         
                             <div class="input">
         
                                 <dl>
-                                    <dt><label for="datetime-first">이용희망기간</label> <i>*</i></dt>
+
+        
+                                    <dt><label for="number">접수번호</label> </dt>
+                                    <dd>
+                                        <input id="number" type="text" value="0000" readonly>
+                                    </dd>
+
+        
+                                    <dt><label for="div">보유기관</label> </dt>
+                                    <dd>
+                                        <input id="div" type="text" value="제주테크노파크" readonly>
+                                    </dd>
+
+                                </dl>
+                            </div>
+
+                            <h4 class="btitle">예약정보</h4>
+                            <div class="input">
+        
+                                <dl>
+
+
+
+                                    <dt><label for="datetime-first">이용희망시작</label> <i>*</i></dt>
                                     <dd>
                                         <p class="rows">
                                             <input id="datetime-first" class="date" type="date">
                                             <u>-</u>
                                             <input class="date" type="date">
-                                        </p>
-                                        <p class="rows">
+
                                             
                                             <span class="select-outline time">
                                                 <select>
@@ -252,47 +275,92 @@
                                                 </select>
                                             </span>
                                             <u>분</u>
-                                            <u>-</u>
-                                            
-                                            <span class="select-outline time">
-                                                <select>
-                                                    <option value="">01</option>
-                                                </select>
-                                            </span>
-                                            <u>시</u>
-                                            <span class="select-outline time">
-                                                <select>
-                                                    <option value="">01</option>
-                                                </select>
-                                            </span>
-                                            <u>분</u>
-        
-                                            <button class="check-reserv">예약가능 확인</button>
                                         </p>
                                             
-                                        <span class="info">
-                                            이용희망기간은 실제 이용기간과 다를 수 있습니다. (담당자가 접수처리시 전화로 실제 이용기간을 확정하게 됩니다.)
-                                        </span>
-                                            
-                                        <span class="info red">
-                                            이용희망기간의 예상 이용시간과 이용료는 하단 '사용료 계산 및 산출내역'을 확인바랍니다.
-                                        </span>
                                     </dd>
-        
-                                    <dt><label for="category">사용구분</label> <i>*</i></dt>
+
+
+                                    <dt><label for="datetime-last">이용희망종료</label> <i>*</i></dt>
                                     <dd>
+                                        <p class="rows">
+                                            <input id="datetime-last" class="date" type="date">
+                                            <u>-</u>
+                                            <input class="date" type="date">
+
+                                            
+                                            <span class="select-outline time">
+                                                <select>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </span>
+                                            <u>시</u>
+                                            <span class="select-outline time">
+                                                <select>
+                                                    <option value="">01</option>
+                                                </select>
+                                            </span>
+                                            <u>분</u>
+                                            <button class="check-reserv">중복체크</button>
+                                        </p>
+                                            
+                                    </dd>
+
+
+                                    <dt><label for="company">신청기업</label> </dt>
+                                    <dd>
+                                        <input id="company" type="text" value="인포마인드" readonly>
+                                    </dd>
+
+                                    <dt><label for="part">신청자 부서</label> </dt>
+                                    <dd>
+                                        <input id="part" type="text" value="개발부" readonly>
+                                    </dd>
+
         
-                                        <span class="select-outline full">
-                                            <select id="cagetory">
-                                                <option value="">분석시험의뢰</option>
+                                    <dt><label for="prop-pos">신청자 직위</label> <i>*</i></dt>
+
+                                    <dd>
+                                        <input id="prop-pos" type="text">
+                                    </dd>
+                                    <dt><label for="name">신청자 이름</label> </dt>
+                                    <dd>
+                                        <input id="name" type="text" value="나유한" readonly>
+                                    </dd>
+                                    <dt><label for="mobile-first">연락처</label> <i>*</i></dt>
+                                    <dd>
+                                        <input id="mobile-first" type="text" class="tel">
+                                        <u>-</u>
+                                        <input type="text" class="tel">
+                                        <u>-</u>
+                                        <input type="text" class="tel">
+        
+                                    </dd>
+                                    <dt><label for="mail">이메일</label> <i>*</i></dt>
+                                    <dd>
+                                        <input type="text" class="with-mail">
+                                        <span class="select-outline mail">
+                                            <span>@</span>
+                                            <select id="mail" name="mail">
+                                                <option value="">직접입력(선택)</option>
                                             </select>
                                         </span>
-                                    </dd>
         
-                                    <dt><label for="purpose">이용목적</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="purpose" type="text">
                                     </dd>
+
+                                </dl>
+                            </div>
+
+                            <h4 class="btitle">의뢰내용</h4>
+                            <div class="input">
+        
+                                <dl>
+
+        
+                                    <dt><label for="equipName">장비명</label></dt>
+                                    <dd>
+                                        <input id="equipName" type="text" value="전기차배터리 팩&모듈" readonly>
+                                    </dd>
+
         
                                     <dt><label for="sample">시료명</label> <i>*</i></dt>
                                     <dd>
@@ -304,29 +372,37 @@
                                         <input id="sample-num" type="text">
                                         <span class="info">숫자 1이상의 정수를 입력</span>
                                     </dd>
-        
-                                    <dt>특이사항</dt>
-                                    <dd>
-                                        <textarea></textarea>
-                                    </dd>
-        
-                                </dl>
-                            </div>
-        
-        
-                            <div class="input">
-        
-                                <dl>
+
         
                                     <dt><label for="report">성적서 종류</label> <i>*</i></dt>
                                     <dd>
         
                                         <span class="select-outline full">
                                             <select id="report">
-                                                <option value="">일반성정서</option>
+                                                <option value="">일반성적서</option>
                                             </select>
                                         </span>
                                     </dd>
+
+
+
+                                    <dt><label for="purpose">성적서용도</label> <i>*</i></dt>
+                                    <dd>
+        
+                                        <span class="select-outline full">
+                                            <select id="purpose">
+                                                <option value="">참고용</option>
+                                            </select>
+                                        </span>
+                                    </dd>
+        
+
+        
+                                    <dt><label for="pages">성적서 신청매수</label></dt>
+                                    <dd>
+                                        <input id="pages" type="text">
+                                    </dd>
+
         
                                     <dt><label for="after">시험 후 시료처리</label> <i>*</i></dt>
                                     <dd>
@@ -338,160 +414,49 @@
                                             </select>
                                         </span>
                                             
-                                        <span class="info">
-                                            반환 및 보관시 수수료가 발생합니다. 실제 시료 보관기간은 내부 정책을 따릅니다.
-                                        </span>
-                                            
                                     </dd>
-        
-                                </dl>
-                            </div>
-        
-                            <div class="input">
-        
-                                <dl>
-        
-                                    <dt><label for="prop-name">신청자명</label> <i>*</i></dt>
+
+                                    <dt><label for="period">시료처리 보관기간 </label> <i>*</i></dt>
                                     <dd>
-                                        <input id="prop-name" type="text" readonly="" value="홍길동">
-                                    </dd>
-        
-                                    <dt><label for="prop-co">소속기관</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="prop-co" type="text" readonly="" value="(재)제주테크노파크">
-                                    </dd>
-        
-                                    <dt><label for="prop-dep">소속부서/센터</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="prop-dep" type="text">
-                                    </dd>
-        
-                                    <dt><label for="prop-pos">신청자 직책</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="prop-pos" type="text">
-                                    </dd>
-        
-                                    <dt><label for="claim">청구방법</label> <i>*</i></dt>
-                                    <dd>
+                                        
         
                                         <span class="select-outline full">
-                                            <select id="claim">
-                                                <option value="">세금계산서</option>
-                                            </select>
-                                        </span>
-                                    </dd>
-        
-                                    <dt>첨부파일</dt>
-                                    <dd>
-        
-                                        <button>파일선택</button>
-                                        <span class="info with-btn">선택된 파일이 없습니다.</span>
-                                    </dd>
-        
-                                    <dt><label for="division">구분</label> <i>*</i></dt>
-                                    <dd>
-        
-                                        <span class="select-outline full">
-                                            <select id="division">
-                                                <option value="">사업자</option>
-                                            </select>
-                                        </span>
-                                    </dd>
-        
-                                    <dt><label for="biz-number">사업자 등록번호</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="biz-number" type="text" readonly="" value="01-235-355620">
-                                    </dd>
-        
-                                    <dt><label for="biz-ceo">사업자 대표</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="biz-ceo" type="text" readonly="" value="태성길">
-                                    </dd>
-        
-                                    <dt><label for="biz-addr">사업자 주소</label> <i>*</i></dt>
-                                    <dd>
-                                        <input id="biz-addr" type="text" readonly="" value="제주특별자치도 제주시 중앙로 217">
-                                    </dd>
-        
-                                    <dt><label for="biz-sectors">사업자 업태/업종</label></dt>
-                                    <dd>
-        
-                                        <span class="select-outline half mg10">
-                                            <select id="biz-sectors">
+                                            <select id="period">
                                                 <option value="">선택</option>
                                             </select>
                                         </span>
+                                            
+                                    </dd>
+
         
-                                        <span class="select-outline half">
-                                            <select>
-                                                <option value="">선택</option>
-                                            </select>
-                                        </span>
+                                    <dt><label for="storage">시료처리 보관수</label></dt>
+                                    <dd>
+                                        <input id="storage" type="text">
+                                    </dd>
+
+        
+                                    <dt><label for="purpose">이용목적 </label></dt>
+                                    <dd>
+                                        <input id="purpose" type="text">
+                                    </dd>
+
+
+
+
+
+                                    
+                                    <dt>특이사항</dt>
+                                    <dd>
+                                        <textarea></textarea>
                                     </dd>
         
                                 </dl>
-                            </div>
-        
-                            <div class="input">
-        
-                                <dl>
-        
-                                    <dt>장비 이용료 단위</dt>
-                                    <dd>
-                                        <p class="rows strong">
-                                            시간
-                                        </p>
-                                        
-                                            
-                                        <span class="info">
-                                            반환 및 보관시 수수료가 발생합니다. 실제 시료 보관기간은 내부 정책을 따릅니다.
-                                        </span>
-                                    </dd>
-        
-                                    <dt>예상사용료 계산 <i>*</i></dt>
-                                    <dd>
-                                        
-        
-                                        
-                                        <button class="calc">예상 사용료 계산</button>
-                                            
-                                    </dd>
-        
-                                    <dt>이용료 산출내역</dt>
-                                    <dd>
-                                        
-                                        <p class="rows result">
-                                            총 이용(분석)료 : <i>0원</i> <span>/ 총 사용시간 : <i>0시간 0분</i></span>
-                                            <button>상세내역<i class="bx bx-chevron-up"></i></button>
-                                        </p>
-        
-                                        <div class="total-result">
-                                            내역
-                                        </div>
-        
-                                        
-                                            
-                                        <span class="info red">
-                                            - 할인할증 적용 전 이용료 산출내역입니다. 
-                                        </span>
-                                            
-                                        <span class="info red">
-                                            - 이용료 단위가 시간인 경우 이용료가 일자별 30분 단위 올림으로 계산됩니다. 
-                                        </span>
-                                            
-                                        <span class="info red">
-                                            예1) 0시간 01~30분 이용시 30분으로 올림하여 계산 예2) 1시간 31~59분 이용시 2시간으로 올림하여 계산
-                                        </span>
-                                            
-                                    </dd>
-        
-                                </dl>
-        
+
         
         
                                 <div class="btn-set center big">
-                                    <button class="btn">목록으로</button>
-                                    <button class="btn main">신청등록</button>
+                                    <button class="btn">목록</button>
+                                    <button class="btn main">저장</button>
                                 </div>
                                 
         
