@@ -3423,6 +3423,11 @@ body {
             h5 {
               font-size:20px;
               font-weight:500;
+              margin:0 0 30px;
+
+              @media (min-width: $screen-size-pc) {
+                margin:0 0 40px;
+              }
 
               small {
                 display:block;
@@ -3473,6 +3478,12 @@ body {
                   outline:none;
                   border-radius:5px;
                   padding:0 20px;
+
+                  &:read-only {
+                    background:#eee;
+                    color:#555;
+                    font-weight:600;
+                  }
 
                   &:focus {
                     background:#efefef;
@@ -3604,7 +3615,7 @@ body {
               width:100%;
               margin:20px 0;
               height:50px;
-              background:#423B84;
+              background:#0075bc;
               color:#fff;
               font-size:16px;
 

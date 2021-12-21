@@ -750,7 +750,7 @@ button {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 1000000000;
   left: 0;
   top: 0;
   width: 100%;
@@ -774,7 +774,13 @@ button {
 @media (min-width: 1200px) {
   .modal .modal-content {
     width: 500px;
+    max-height: 90vh;
   }
+}
+
+.modal .modal-content.scroll {
+  margin: 5vh auto 0;
+  overflow-y: auto;
 }
 
 .modal .modal-content.big {
@@ -784,6 +790,16 @@ button {
 @media (min-width: 1200px) {
   .modal .modal-content.big {
     width: 600px;
+  }
+}
+
+.modal .modal-content.full {
+  width: calc(100% - 40px);
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content.full {
+    width: 900px;
   }
 }
 
@@ -1326,6 +1342,347 @@ button {
   background: #efefef;
   color: #666;
   font-weight: 600;
+}
+
+.modal .modal-content div.inside div.company-search {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #efefef;
+}
+
+.modal .modal-content div.inside div.company-search label {
+  display: inline-block;
+  line-height: 42px;
+  width: 80px;
+  font-size: 16px;
+}
+
+.modal .modal-content div.inside div.company-search input {
+  font-size: 16px;
+  height: 42px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  vertical-align: top;
+  width: calc(100% - 200px);
+  border-right: none;
+}
+
+.modal .modal-content div.inside div.company-search button {
+  vertical-align: top;
+  width: 60px;
+  font-size: 14px;
+  height: 42px;
+  border: none;
+  background: #555;
+  color: #fff;
+}
+
+.modal .modal-content div.inside div.company-search button.add {
+  background: #0075bc;
+}
+
+.modal .modal-content div.inside ul.company-list {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  border-top: 2px solid #3d3d3d;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 64px;
+    background: #fafafa;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li a {
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a {
+    padding: 20px 0;
+    height: 60px;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li a p {
+  margin: 0;
+  position: relative;
+  line-height: 32px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p {
+    position: absolute;
+    font-size: 14px;
+    top: 20px;
+    line-height: 1;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li a p u {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.modal .modal-content div.inside ul.company-list li a p u button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 20px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p u button {
+    position: relative;
+    top: -6px;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li a p span {
+  display: inline-block;
+  font-size: 14px;
+  background: #efefef;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p span {
+    background: none;
+    display: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.button {
+    display: block;
+    left: 0;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.code {
+    display: block;
+    left: 100px;
+    width: 110px;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li a p.code u {
+  color: #0075bc;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.code u {
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.cname {
+    display: block;
+    left: 210px;
+    width: 120px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.name {
+    display: block;
+    left: 330px;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.cnum {
+    display: block;
+    left: 430px;
+    width: 150px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.category1 {
+    display: block;
+    left: 580px;
+    width: 140px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.category2 {
+    display: block;
+    left: 720px;
+    width: 140px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li a p.price {
+    display: block;
+    left: 1030px;
+    width: 130px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li:first-child a h4 span,
+  .modal .modal-content div.inside ul.company-list li:first-child a p span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: -60px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li.notice {
+  background: #f3f3f3;
+}
+
+.modal .modal-content div.inside ul.company-list li.notice h4 {
+  padding-left: 65px;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li.notice h4 {
+    padding-left: 0;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li.notice a p.num {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  padding: 2px 0;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li.notice a p.num {
+    display: inline-block;
+    left: 0;
+    top: 20px;
+  }
+}
+
+.modal .modal-content div.inside ul.company-list li.notice a p.num u {
+  display: block;
+  background: #699b00;
+  width: 50px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside ul.company-list li.notice a p.num u {
+    padding: 5px 0;
+    margin: -5px 15px 0;
+    top: 0;
+  }
+}
+
+.modal .modal-content div.inside ul.company {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.modal .modal-content div.inside ul.company li {
+  margin: 0 0 10px;
+}
+
+.modal .modal-content div.inside ul.company li label {
+  display: inline-block;
+  line-height: 42px;
+  width: 90px;
+  font-size: 16px;
+}
+
+.modal .modal-content div.inside ul.company li input,
+.modal .modal-content div.inside ul.company li select {
+  font-size: 16px;
+  height: 42px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: calc(100% - 90px);
+}
+
+.modal .modal-content div.inside ul.company li input:-moz-read-only,
+.modal .modal-content div.inside ul.company li select:-moz-read-only {
+  background: #efefef;
+  color: #666;
+  font-weight: 600;
+}
+
+.modal .modal-content div.inside ul.company li input:read-only,
+.modal .modal-content div.inside ul.company li select:read-only {
+  background: #efefef;
+  color: #666;
+  font-weight: 600;
+}
+
+.modal .modal-content div.inside ul.company li p.address {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  width: calc(100% - 90px);
+}
+
+.modal .modal-content div.inside ul.company li p.address span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal .modal-content div.inside ul.company li p.address span input {
+  width: 100%;
+}
+
+.modal .modal-content div.inside ul.company li p.address span #postcode {
+  width: 90px;
+  vertical-align: top;
+}
+
+.modal .modal-content div.inside ul.company li p.address span button {
+  vertical-align: top;
+  height: 42px;
+  width: 50px;
+  font-size: 14px;
+  color: #fff;
+  background: #555;
+  border: none;
 }
 
 .modal .modal-content div.inside div.test-category span.select-outline {
@@ -5684,6 +6041,13 @@ body div#content.sub section.sub-content div.container article.sign {
 body div#content.sub section.sub-content div.container article.sign h5 {
   font-size: 20px;
   font-weight: 500;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sign h5 {
+    margin: 0 0 40px;
+  }
 }
 
 body div#content.sub section.sub-content div.container article.sign h5 small {
@@ -5736,6 +6100,20 @@ body div#content.sub section.sub-content div.container article.sign dl dd input[
   outline: none;
   border-radius: 5px;
   padding: 0 20px;
+}
+
+body div#content.sub section.sub-content div.container article.sign dl dd input[type="text"]:-moz-read-only,
+body div#content.sub section.sub-content div.container article.sign dl dd input[type="password"]:-moz-read-only {
+  background: #eee;
+  color: #555;
+  font-weight: 600;
+}
+
+body div#content.sub section.sub-content div.container article.sign dl dd input[type="text"]:read-only,
+body div#content.sub section.sub-content div.container article.sign dl dd input[type="password"]:read-only {
+  background: #eee;
+  color: #555;
+  font-weight: 600;
 }
 
 body div#content.sub section.sub-content div.container article.sign dl dd input[type="text"]:focus,
@@ -5865,7 +6243,7 @@ body div#content.sub section.sub-content div.container article.sign button.btn.m
   width: 100%;
   margin: 20px 0;
   height: 50px;
-  background: #423B84;
+  background: #0075bc;
   color: #fff;
   font-size: 16px;
 }

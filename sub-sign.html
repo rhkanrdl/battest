@@ -155,89 +155,127 @@
         </nav>
         <!-- E:main_menu -->
 
-
-
-
         <div id="modal-co" class="modal on">
  
             <!-- Modal content -->
-            <div class="modal-content big">
-                      <h2>시험평가 <button class="close">닫기</button></h2>
+            <div class="modal-content scroll full">
+                      <h2>기업찾기<button class="close">닫기</button></h2>
                       <div class="inside">
-        
-                        <div class="test-category">
-                            
-                            <span class="select-outline">
-                                <label for="select01">인증</label>
-                                <select id="select01">
-                                    <option value="">전체</option>
-                                </select>
-                            </span>
-                            
-                            <span class="select-outline">
-                                <label for="select02">시험구분</label>
-                                <select id="select02">
-                                    <option value="">전체</option>
-                                </select>
-                            </span>
-                            
-                            <span class="select-outline">
-                                <label for="select03">시험단위</label>
-                                <select id="select03">
-                                    <option value="">전체</option>
-                                </select>
-                            </span>
+                        
+                        <div class="company-search">
+                                <label for="company-name">기업명</label>
+                                <input id="company-name" type="text">
+                                <button>조회</button>
+                                <button class="add">추가</button>
                         </div>
-        
-        
 
-                        <ul class="test-list">
+                        <ul class="company-list">
                             <li>
                                 <a href="">
-                                    <p class="button"><span>선택</span><u><input type="checkbox"></u></p>
+                                    <p class="button"><span>선택</span><u><button>선택</button></u></p>
                                     <p class="code">
-                                        <span>시험항목코드</span><u>K1101M001</u>
+                                        <span>기업코드</span><u>C00001</u>
                                     </p>
-                                    <p class="rcode"><span>인증</span><u>KBIA-10104-01</u></p>
-                                    <p class="type"><span>시험구분</span><u>안정성시험</u></p>
-                                    <p class="part">
-                                        <span>시험단위</span><u>모듈</u>
-                                    </p>
-                                    <p class="checklist">
-                                        <span>시험항목</span><u>외부단락시험</u>
-                                    </p>
-                                    <p class="eqip01"><span>장비1</span><u>외부단락기</u></p>
-                                    <p class="price"><span>시험수수료</span><u>10,000원</u></p>
-                                    <p class="use"><span>사용여부</span><u>사용</u></p>
+                                    <p class="cname"><span>기업명</span><u>인포마인드</u></p>
+                                    <p class="name"><span>대표자명</span><u>홍길동</u></p>
+                                    <p class="cnum"><span>사업자번호</span><u>616-00-000000</u></p>
+                                    <p class="category1"><span>업태</span><u>서비스업</u></p>
+                                    <p class="category2"><span>업종</span><u>IT서비스</u></p>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <p class="button"><span>선택</span><u><input type="checkbox"></u></p>
+                                    <p class="button"><span>선택</span><u><button>선택</button></u></p>
                                     <p class="code">
-                                        <span>시험항목코드</span><u>K1101M001</u>
+                                        <span>기업코드</span><u>C00001</u>
                                     </p>
-                                    <p class="rcode"><span>인증</span><u>KBIA-10104-01</u></p>
-                                    <p class="type"><span>시험구분</span><u>안정성시험</u></p>
-                                    <p class="part">
-                                        <span>시험단위</span><u>모듈</u>
-                                    </p>
-                                    <p class="checklist">
-                                        <span>시험항목</span><u>외부단락시험</u>
-                                    </p>
-                                    <p class="eqip01"><span>장비1</span><u>외부단락기</u></p>
-                                    <p class="price"><span>시험수수료</span><u>10,000원</u></p>
-                                    <p class="use"><span>사용여부</span><u>사용</u></p>
+                                    <p class="cname"><span>기업명</span><u>인포마인드</u></p>
+                                    <p class="name"><span>대표자명</span><u>홍길동</u></p>
+                                    <p class="cnum"><span>사업자번호</span><u>616-00-000000</u></p>
+                                    <p class="category1"><span>업태</span><u>서비스업</u></p>
+                                    <p class="category2"><span>업종</span><u>IT서비스</u></p>
                                 </a>
                             </li>
                             
                         </ul>
+                        <ul class="company">
+                            
+                            <li>
+                                <label for="name">기업코드</label>
+                                <input id="name" type="text" readonly value="홍길동">
+                            </li>
+                            
+                            <li>
+                                <label for="cname">기업명</label>
+                                <input id="cname" type="text">
+                            </li>
+                            
+                            <li>
+                                <label for="ceo">대표자명</label>
+                                <input id="ceo" type="text">
+                            </li>
+                            
+                            <li>
+                                <label for="category1">업태</label>
+                                <input id="category1" type="text">
+                            </li>
+                            
+                            
+                            <li>
+                                <label for="category2">업종</label>
+                                <input id="category2" type="text">
+                            </li>
+                            
+                            
+                            <li>
+                                <label for="cnum">사업자번호</label>
+                                <input id="cnum" type="text">
+                            </li>
+                            
+                            
+                            <li>
+                                <label for="address2">주소</label>
+                                <p class="address">
+                                    <span>
+                                        <input id="postcode" type="text"><button>찾기</button>
+                                    </span>
+                                    <span>
+                                        <input id="address1" type="text">
+                                    </span>
+                                    <span>
+                                        <input id="address2" type="text">
+                                    </span>
+                                </p>
+                            </li>
+                            
+                            
+                            <li>
+                                <label for="size">기업규모</label>
+                                <select id="size">
+                                    <option>선택</option>
+                                </select>
+                            </li>
+        
+
+                            <li>
+                                <label for="category3">주요업종</label>
+                                <input id="category3" type="text">
+                            </li>
+    
+                            <li>
+                                <label for="tel">전화번호</label>
+                                <input id="tel" type="text">
+                            </li>
+        
+                        </ul>
 
                         <div class="btn-set center">
-                            <button class="btn main">선택완료</button>
-                            <button class="btn">취소</button>
+                            <button class="btn main">저장</button>
                         </div>
-            
+                        
+        
+          
+        
         
                       </div>
         
@@ -251,6 +289,7 @@
             </div>
         
           </div>
+
 
 
         <!-- S:subContent -->
@@ -313,149 +352,98 @@
 
                 <div class="container">
 
-                    <h3 class="stitle">시험평가 접수 등록</h3>
+                    <h3 class="stitle">회원가입</h3>
     
-                    <article class="sub-form">
+                    <article class="sign">
 
 
-                        <h4 class="btitle">신청기업정보</h4>
+                        <h5>
+                            회원 기본정보 입력
 
-                        <div class="input">
+                            <small>
+                                * 표시는 필수 입력 항목입니다.
+                            </small>
+                        </h5>
 
-                            <dl>
-    
-                                <dt><label for="company">기업명</label></dt>
-                                <dd>
-                                    <input id="company" type="text" readonly value="인포마인드">
-                                </dd>
-                                <dt><label for="biz-number">사업자 등록번호</label></dt>
-                                <dd>
-                                    <input id="biz-number" type="text" readonly value="01-235-355620">
-                                </dd>
+                        <dl>
 
-                                <dt><label for="prop-name">담당자</label> <i>*</i></dt>
-                                <dd>
-                                    <input id="prop-name" type="text" readonly="" value="홍길동">
-                                </dd>
-                                <dt><label for="position">직위</label> <i>*</i></dt>
-                                <dd>
-                                    <input id="position" type="text">
-                                </dd>
-                                <dt><label for="mail">이메일</label> <i>*</i></dt>
-                                <dd>
-                                    <input type="text" class="with-mail">
-                                    <span class="select-outline mail">
-                                        <span>@</span>
-                                        <select id="mail" name="mail">
-                                            <option value="">직접입력(선택)</option>
-                                        </select>
-                                    </span><button >이메일 확인</button>
-    
-                                </dd>
-                                <dt><label for="mobile-first">휴대전화</label> <i>*</i></dt>
-                                <dd>
-                                    <input id="mobile-first" type="text" class="tel">
-                                    <u>-</u>
-                                    <input type="text" class="tel">
-                                    <u>-</u>
-                                    <input type="text" class="tel">
-    
-                                </dd>
+                            
+                            <dt><label for="company">기업명</label> <i>*</i></dt>
+                            <dd>
+                                <input id="company" class="with-button" type="text" value="인포마인드" readonly>
+                                <button class="check-id">찾기</button>
+                            </dd>
+                            <dt><label for="id">아이디</label> <i>*</i></dt>
+                            <dd>
+                                <input id="id" class="with-button" type="text" placeholder="영문+숫자 조합 6~12자리">
+                                <button class="check-id">아이디 중복확인</button>
+                            </dd>
 
-                                <dt><label for="count">시료수</label> <i>*</i></dt>
-                                <dd>
-                                    <input id="count" type="text">
-                                </dd>
+                            <dt><label for="passwd">비밀번호</label> <i>*</i></dt>
+                            <dd>
+                                <input id="passwd" type="password" placeholder="영문+숫자+특수문자로 조횝된 8~16자리">
+                            </dd>
+
+                            <dt><label for="passwd">비밀번호 확인</label> <i>*</i></dt>
+                            <dd>
+                                <input id="passwd-re" type="password" placeholder="설정하신 비밀번호를 한번 더 입력해주세요.">
+                            </dd>
+
+                            <dt><label for="name">이름</label> <i>*</i></dt>
+                            <dd>
+                                <input id="name" type="text" placeholder="홍길동">
+                            </dd>
 
 
 
-                            </dl>
 
 
-                            <h4 class="btitle">신청내용</h4>
+                            <dt>성별 <i>*</i></dt>
+                            <dd>
+                                <input id="type01" name="type" type="radio"><label for="type01">남자</label>
+                                <input id="type02" name="type" type="radio"><label for="type02">여자</label>
 
-                            <dl>
+                            </dd>
 
-                                
-                                <dt><label for="datetime-first">희망시험기간</label> <i>*</i></dt>
-                                <dd>
-                                    <p class="rows inline"> 
-                                        <input id="datetime-first" class="date" type="date">
+                            <dt><label for="mail">이메일</label> <i>*</i></dt>
+                            <dd>
+                                <input type="text" class="with-mail">
+                                    <span>@</span>
+                                    <select id="mail" name="mail">
+                                        <option value="">직접입력(선택)</option>
+                                    </select>
 
-                                        <u>~</u>
-                                        <input id="datetime-last" class="date" type="date">
-                                    </p>
-                                        
-                                </dd>
+                            </dd>
 
-                                <dt><label for="">요청내용</label> <i>*</i></dt>
-                                <dd>
-                                    <textarea></textarea>
-                                </dd>
-                            </dl>
-                        </div>
-                    </article>
+                            <dt><label for="mobile-first">휴대전화</label> <i>*</i></dt>
+                            <dd>
+                                <input id="mobile-first" type="text" class="tel">
+                                <u>-</u>
+                                <input type="text" class="tel">
+                                <u>-</u>
+                                <input type="text" class="tel">
+
+                            </dd>
+
+                            <dt>
+                                <label for="find-text">질문</label>
+                            </dt>
+                            <dd>
+                                <select id="find-text">
+                                    <option>나의 좌우명은?</option>
+                                </select>
+                                <span class="info">비밀번호 찾기에 활용됩니다.</span>
+                            </dd>
+                            <dt>
+                                <label for="find-answer">답변</label>
+                            </dt>
+                            <dd>
+                                <input id="find-answer" name="answer" type="text">
+                            </dd>
 
 
-
-                    <article class="test-list">
-                        <h4 class="btitle">신청 시험항목</h4>
-        
-                            <!--S:SKIN -->
-                            <div class="inBoard list">
-        
-            
-        
-                                <button class="add">시험항목 추가</button>
-            
-                                <ul class="company-list">
-                                    <li>
-                                        <a href="">
-                                            <p class="button"><span>버튼</span><u><button>삭제</button></u></p>
-                                            <p class="code">
-                                                <span>시험항목코드</span><u>K1101M001</u>
-                                            </p>
-                                            <p class="rcode"><span>인증</span><u>KBIA-10104-01</u></p>
-                                            <p class="type"><span>시험구분</span><u>안정성시험</u></p>
-                                            <p class="part">
-                                                <span>시험단위</span><u>모듈</u>
-                                            </p>
-                                            <p class="checklist">
-                                                <span>시험항목</span><u>외부단락시험</u>
-                                            </p>
-                                            <p class="find"><span>찾기</span><u><button>찾기</button></u></p>
-                                            <p class="price"><span>수수료</span><u>10,000원</u></p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <p class="button"><span>버튼</span><u><button>삭제</button></u></p>
-                                            <p class="code">
-                                                <span>시험항목코드</span><u>K1101M001</u>
-                                            </p>
-                                            <p class="rcode"><span>인증</span><u>KBIA-10104-01</u></p>
-                                            <p class="type"><span>시험구분</span><u>안정성시험</u></p>
-                                            <p class="part">
-                                                <span>시험단위</span><u>모듈</u>
-                                            </p>
-                                            <p class="checklist">
-                                                <span>시험항목</span><u>외부단락시험</u>
-                                            </p>
-                                            <p class="find"><span>찾기</span><u><button>찾기</button></u></p>
-                                            <p class="price"><span>수수료</span><u>10,000원</u></p>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-        
-                                <div class="btn-set center">
-                                    <button class="btn main">저장</button>
-                                    <button class="btn">목록</button>
-                                </div>
-        
-                            </div>
-        
-                            <!--E:SKIN-->
+                        </dl>
+                        <button class="btn main">회원가입</button>
                     </article>
 
                 </div>

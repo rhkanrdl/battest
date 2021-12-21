@@ -251,13 +251,14 @@ button {
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1000;
+	z-index: 1000000000;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.5);
+	
 
 	&.on {
 		display: block;
@@ -272,6 +273,12 @@ button {
 
 		@media (min-width: $screen-size-pc) {
 			width: 500px;
+			max-height:90vh;
+		}
+
+		&.scroll {
+			margin:5vh auto 0;
+			overflow-y:auto;
 		}
 
 		&.big {
@@ -279,6 +286,14 @@ button {
 
 			@media (min-width: $screen-size-pc) {
 				width: 600px;
+			}
+		}
+
+		&.full {
+			width: calc(100% - 40px);
+
+			@media (min-width: $screen-size-pc) {
+				width: 900px;
 			}
 		}
 
@@ -796,6 +811,328 @@ button {
 							background:#efefef;
 							color:#666;
 							font-weight:600;
+						}
+					}
+
+				}
+			}
+
+
+			div.company-search {
+				margin-bottom:20px;
+				padding:20px;
+				background:#efefef;
+
+				label {
+					display:inline-block;
+					line-height:42px;
+					width:80px;
+					font-size:16px;
+				}
+				input {
+					font-size:16px;
+					height:42px;
+					border:1px solid #ccc;
+					padding:0 10px;
+					vertical-align:top;
+					width:calc(100% - 200px);
+					border-right:none;
+				}
+
+				button {
+					vertical-align:top;
+					width:60px;
+					font-size:14px;
+					height:42px;
+					border:none;
+					background:#555;
+					color:#fff;
+
+					&.add {
+						background:#0075bc;
+					}
+				}
+			}
+
+			ul.company-list {
+                list-style: none;
+                margin: 0 0 40px;
+                padding: 0;
+                border-top: 2px solid #3d3d3d;
+                font-size: 0;
+      
+                @media (min-width: $screen-size-pc) {
+                  &::before {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 64px;
+                    background: #fafafa;
+                    border-bottom: 1px solid #ccc;
+                  }
+                }
+      
+                li {
+                  a {
+                    display: block;
+                    position: relative;
+                    padding: 10px 0;
+                    border-bottom:1px solid #ccc;
+      
+                    @media (min-width: $screen-size-pc) {
+                      padding: 20px 0;
+                      height: 60px;
+                    }
+      
+                    p {
+                      margin: 0;
+                      position: relative;
+                      line-height: 32px;
+      
+                      @media (min-width: $screen-size-pc) {
+                        position: absolute;
+                        font-size: 14px;
+                        top: 20px;
+                        line-height: 1;
+                      }
+      
+                      u {
+                        font-size: 13px;
+                        text-decoration: none;
+
+                        button {
+                          background:#fff;
+                          border:1px solid #ccc;
+                          border-radius:4px;
+                          height:32px;
+                          padding:0 20px;
+      
+                          @media (min-width: $screen-size-pc) {
+                            position:relative;
+                            top:-6px;
+                          }
+                        }
+                      }
+      
+                      span {
+                        display: inline-block;
+                        font-size: 14px;
+                        background: #efefef;
+                        width: 90px;
+                        margin-right: 10px;
+                        text-align: center;
+      
+                        @media (min-width: $screen-size-pc) {
+                          background: none;
+                          display: none;
+                          margin: 0;
+                        }
+                      }
+      
+                      &.button {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 0;
+                          width: 100px;
+                          text-align: center;
+                        }
+                      }
+      
+                      &.code {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 100px;
+                          width: 110px;
+                        }
+      
+                        u {
+                          color: #0075bc;
+                          font-weight: 600;
+                          @include ellipse;
+      
+                          @media (min-width: $screen-size-pc) {
+                            display: block;
+                            padding: 0 10px;
+                            text-align: center;
+                            font-size: 14px;
+                          }
+                        }
+                      }
+      
+                      &.cname {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 210px;
+                          width: 120px;
+                          text-align: center;
+                        }
+                      }
+                      &.name {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 330px;
+                          width: 100px;
+                          text-align: center;
+                        }
+                      }
+                      &.cnum {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 430px;
+                          width: 150px;
+                          text-align: center;
+                        }
+                      }
+
+                      &.category1 {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 580px;
+                          width: 140px;
+                          text-align: center;
+                        }
+                      }
+
+                      &.category2 {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 720px;
+                          width: 140px;
+                          text-align: center;
+                        }
+                      }
+      
+                      &.price {
+                        @media (min-width: $screen-size-pc) {
+                          display: block;
+                          left: 1030px;
+                          width: 130px;
+                          text-align: center;
+                        }
+                      }
+                    }
+                  }
+      
+                  @media (min-width: $screen-size-pc) {
+                    &:first-child {
+                      a {
+                        h4,
+                        p {
+                          span {
+                            display: block;
+                            width: 100%;
+                            position: absolute;
+                            text-align: center;
+                            top: -60px;
+                            font-size: 14px;
+                            font-weight: 600;
+                          }
+                        }
+                      }
+                    }
+                  }
+      
+                  &.notice {
+                    background: #f3f3f3;
+      
+                    h4 {
+                      padding-left: 65px;
+      
+                      @media (min-width: $screen-size-pc) {
+                        padding-left: 0;
+                      }
+                    }
+      
+                    a {
+                      p.num {
+                        display: block;
+                        text-align: center;
+                        position: absolute;
+                        left: 5px;
+                        top: 10px;
+                        padding: 2px 0;
+      
+                        @media (min-width: $screen-size-pc) {
+                          display: inline-block;
+                          left: 0;
+                          top: 20px;
+                        }
+      
+                        u {
+                          display: block;
+                          background: #699b00;
+                          width: 50px;
+                          border-radius: 30px;
+                          color: #fff;
+      
+                          @media (min-width: $screen-size-pc) {
+                            padding: 5px 0;
+                            margin: -5px 15px 0;
+                            top: 0;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+			ul.company { 
+				list-style:none;
+				margin:0 0 20px;
+				padding:0;
+
+				li {
+					margin:0 0 10px;
+
+					label {
+						display:inline-block;
+						line-height:42px;
+						width:90px;
+						font-size:16px;
+					}
+
+					input,
+					select {
+						font-size:16px;
+						height:42px;
+						border:1px solid #ccc;
+						padding:0 10px;
+						width:calc(100% - 90px);
+
+						&:read-only {
+							background:#efefef;
+							color:#666;
+							font-weight:600;
+						}
+					}
+
+					p.address {
+						display:inline-block;
+						vertical-align:top;
+						margin:0;
+						width:calc(100% - 90px);
+
+						span {
+							display:block;
+							margin-bottom:10px;
+
+							input {
+								width:100%;
+							}
+
+							#postcode {
+								width:90px;
+								vertical-align:top;
+							}
+							button {
+								vertical-align:top;
+								height:42px;
+								width:50px;
+								font-size:14px;
+								color:#fff;
+								background:#555;
+								border:none;
+							}
 						}
 					}
 
