@@ -219,51 +219,210 @@
 
                 <div class="container">
 
-                    <h3 class="stitle">마이페이지</h3>
+                    <h3 class="stitle">기술지원접수등록</h3>
     
 
                     
-			<article class="mypage-main">
+                    <article class="equipment-reservation">
+        
+        
+        
+                        <h4 class="btitle">신청기업정보</h4>
+        
+                        <ul class="table">
+                            <li class="half">
+                                <span>신청번호</span>
+                                <u class="block">R00000001</u>
+                            </li>
+                            <li class="half">
+                                <span>신청등록일자</span>
+                                <u class="block">2021-10-25</u>
+                            </li>
+                            <li class="half">
+                                <span>기업명</span>
+                                <u class="block">휴테크놀로지</u>
+                            </li>
+                            <li class="half">
+                                <span>사업자번호</span>
+                                <u class="block">606-00-11111</u>
+                            </li>
+                            <li class="half">
+                                <span>기업규모</span>
+                                <u>중소기업</u>
+                            </li>
+                            <li class="half">
+                                <span>주요업종</span>
+                                <u class="block">배터리 재활용</u>
+                            </li>
+                            <li>
+                                <span>주소</span>
+                                <u>65123 제주특별자치도 제주시 중앙로 217 501호</u>
+                            </li>
+                        </ul>
 
-					<ul>
-						<li>
-							<a class="member" href="">
-                                <i class='bx bx-user-pin'></i>
-								<h4>회원정보관리</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="reservation" href="">
-                                <i class='bx bx-cog' ></i>
-								<h4>장비활용 신청내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="test" href="">
-                                <i class='bx bx-list-ul'></i>
-								<h4>시험접수내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="consulting" href="">
-                                <i class='bx bx-chat'></i>
-								<h4>기술지원신청내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-					</ul>
-			</article>
+                            <h4 class="btitle">신청기업정보>>???? >???? 텍스트 확인필요</h4>
+                            <div class="input">
+        
+                                <dl>
+
+
+                                    <dt><label for="datetime-first">신청분야</label> <i>*</i></dt>
+                                    <dd>
+                                        <input id="type01" name="type" type="checkbox"><label for="type01">재제조배터리모듈</label>
+                                        <input id="type02" name="type" type="checkbox"><label for="type02">재제조배터리팩</label>
+                                        <input id="type03" name="type" type="checkbox"><label for="type03">재제조배터리 전력변환장치</label>
+                                        <input id="type04" name="type" type="checkbox"><label for="type04">재제조배터리 활용시스템</label>
+                                    </dd>
+
+                                    <dt><label for="datetime-last">1순위 희망일자</label> <i>*</i></dt>
+                                    <dd>
+                                        <p class="rows">
+                                            <input id="datetime1" class="date" type="date">
+                                            
+                                            <span class="select-outline time">
+                                                <select>
+                                                    <option value="">오전</option>
+                                                </select>
+                                            </span>
+                                        </p>
+                                            
+                                    </dd>
+
+                                    <dt><label for="datetime2">2순위 희망일자</label> <i>*</i></dt>
+                                    <dd>
+                                        <p class="rows">
+                                            <input id="datetime3" class="date" type="date">
+                                            
+                                            <span class="select-outline time">
+                                                <select>
+                                                    <option value="">오전</option>
+                                                </select>
+                                            </span>
+                                        </p>
+                                            
+                                    </dd>
+
+                                    <dt><label for="datetime-last">3순위 희망일자</label> <i>*</i></dt>
+                                    <dd>
+                                        <p class="rows">
+                                            <input id="datetime-last" class="date" type="date">
+                                            
+                                            <span class="select-outline time">
+                                                <select>
+                                                    <option value="">오전</option>
+                                                </select>
+                                            </span>
+                                        </p>
+                                            
+                                    </dd>
+
+
+                                    <dt><label for="count">방문인원</label> <i>*</i></dt>
+                                    <dd>
+                                            
+                                        <span class="select-outline">
+                                            <select>
+                                                <option value="">1명</option>
+                                            </select>
+                                        </span>
+                                    </dd>
+        
+                                    <dt><label for="name">담당자</label> <i>*</i></dt>
+                                    <dd>
+                                        <input id="name" type="text" value="나유한">
+                                    </dd>
+                                    <dt><label for="prop-pos">신청자 직위</label> <i>*</i></dt>
+
+                                    <dd>
+                                        <input id="prop-pos" type="text">
+                                    </dd>
+                                    <dt><label for="mail">이메일</label> <i>*</i></dt>
+                                    <dd>
+                                        <input type="text" class="with-mail">
+                                        <span class="select-outline mail">
+                                            <span>@</span>
+                                            <select id="mail" name="mail">
+                                                <option value="">직접입력(선택)</option>
+                                            </select>
+                                        </span>
+        
+                                    </dd>
+                                    <dt><label for="mobile-first">휴대전화</label> <i>*</i></dt>
+                                    <dd>
+                                        <input id="mobile-first" type="text" class="tel">
+                                        <u>-</u>
+                                        <input type="text" class="tel">
+                                        <u>-</u>
+                                        <input type="text" class="tel">
+        
+                                    </dd>
+
+                                </dl>
+                            </div>
+
+                            <h4 class="btitle">신청내용</h4>
+                            <div class="input">
+        
+                                <dl>
+        
+                                    
+                                    <dt>신청동기</dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+                                    
+                                    <dt>요청내용</dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+                                    
+                                    <dt>활용목적</dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+                                    
+                                    <dt>예상성과</dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+                                    
+                                    <dt>기타 요청사항</dt>
+                                    <dd>
+                                        <textarea></textarea>
+                                    </dd>
+        
+                                </dl>
+        
+        
+        
+                            </div>
+
+        
+                            <ul class="table">
+                                <li class="half">
+                                    <span>접수상태</span>
+                                    <u class="block">신청</u>
+                                </li>
+                                <li class="half">
+                                    <span>접수/취소 처리일자</span>
+                                    <u class="block">2021-09-05</u>
+                                </li>
+                                <li>
+                                    <span>거절사유</span>
+                                    <u>야옹</u>
+                                </li>
+                            </ul>
+        
+
+        
+        
+                            <div class="btn-set center big">
+                                <button class="btn">목록</button>
+                                <button class="btn main">저장</button>
+                            </div>
+                            
+                        
+                    </article>
 
 
                 </div>

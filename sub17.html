@@ -159,6 +159,7 @@
 
 
 
+
         <!-- S:subContent -->
         <div id="content" class="sub">
 
@@ -219,52 +220,107 @@
 
                 <div class="container">
 
-                    <h3 class="stitle">마이페이지</h3>
+                    <h3 class="stitle">기술지원신청내역</h3>
     
-
-                    
-			<article class="mypage-main">
-
-					<ul>
-						<li>
-							<a class="member" href="">
-                                <i class='bx bx-user-pin'></i>
-								<h4>회원정보관리</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="reservation" href="">
-                                <i class='bx bx-cog' ></i>
-								<h4>장비활용 신청내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="test" href="">
-                                <i class='bx bx-list-ul'></i>
-								<h4>시험접수내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-						<li>
-							<a class="consulting" href="">
-                                <i class='bx bx-chat'></i>
-								<h4>기술지원신청내역</h4>
-								<p>
-									바로가기
-								</p>
-							</a>
-						</li>
-					</ul>
-			</article>
-
+                    <article class="support-list">
+        
+                            <!--S:SKIN -->
+                            <div class="inBoard list">
+        
+                                <fieldset>
+                                    <legend class="sr-only">내역조회</legend>
+            
+            
+            
+                                    <label for="date-first">신청등록일자</label>
+                                    <input id="date-first" type="text" class="date">
+                                    <u>~</u>
+                                    <input type="text" class="date">
+        
+            
+                                    <label for="search">접수상태상태</label>
+                                    <span class="select-outline">
+                                        <select id="search">
+                                            <option>전체</option>
+                                        </select>
+                                    </span>
+                                    <button>검색</button>
+            
+            
+                                </fieldset>
+            
+                                <ul class="sort">
+                                    <li>전체 <strong>5984</strong>건</li>
+                                    <li>
+                                        
+                                        
+            
+                                    </li>
+                                </ul>
+            
+                                <ul class="list">
+                                    <li>
+                                        <a href="">
+                                            <p class="num"><span>신청번호</span><u>R00000004</u></p>
+                                            <p class="date"><span>신청등록일자</span><u>2020-09-18</u></p>
+                                            <p class="name"><span>담당자</span><u>이순신</u></p>
+                                            <p class="phone"><span>휴대전화</span><u>010-1234-1234</u></p>
+                                            <p class="status"><span>접수상태</span><u>신청</u></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <p class="num"><span>신청번호</span><u>R00000004</u></p>
+                                            <p class="date"><span>신청등록일자</span><u>2020-09-18</u></p>
+                                            <p class="name"><span>담당자</span><u>이순신</u></p>
+                                            <p class="phone"><span>휴대전화</span><u>010-1234-1234</u></p>
+                                            <p class="status"><span>접수상태</span><u>신청</u></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <p class="num"><span>신청번호</span><u>R00000004</u></p>
+                                            <p class="date"><span>신청등록일자</span><u>2020-09-18</u></p>
+                                            <p class="name"><span>담당자</span><u>이순신</u></p>
+                                            <p class="phone"><span>휴대전화</span><u>010-1234-1234</u></p>
+                                            <p class="status"><span>접수상태</span><u>신청</u></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <p class="num"><span>신청번호</span><u>R00000004</u></p>
+                                            <p class="date"><span>신청등록일자</span><u>2020-09-18</u></p>
+                                            <p class="name"><span>담당자</span><u>이순신</u></p>
+                                            <p class="phone"><span>휴대전화</span><u>010-1234-1234</u></p>
+                                            <p class="status"><span>접수상태</span><u>신청</u></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <p class="num"><span>신청번호</span><u>R00000004</u></p>
+                                            <p class="date"><span>신청등록일자</span><u>2020-09-18</u></p>
+                                            <p class="name"><span>담당자</span><u>이순신</u></p>
+                                            <p class="phone"><span>휴대전화</span><u>010-1234-1234</u></p>
+                                            <p class="status"><span>접수상태</span><u>신청</u></p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+        
+                                <article class="pagenation">
+                                    <a href="?pageIndex=1" title="처음으로 이동" class="jump" onclick="linkPage(1);return false; ">처음<i class="bx bx-chevrons-left" aria-hidden="true"></i></a>
+                                    <a href="?pageIndex=1" title="이전 페이지로 이동" class="move" onclick="linkPage(1);return false; ">이전<i class="bx bx-chevron-left" aria-hidden="true"></i></a>
+                                    <strong>1</strong>
+                                    <a href="?pageIndex=2" onclick="linkPage(2);return false; " title="2 페이지로 이동">2</a>
+                                    <a href="?pageIndex=3" onclick="linkPage(3);return false; " title="3 페이지로 이동">3</a>
+                                    <a href="?pageIndex=4" onclick="linkPage(4);return false; " title="4 페이지로 이동">4</a>
+                                    <a href="?pageIndex=11" title="다음 페이지로 이동" class="move" onclick="linkPage(6);return false; ">다음<i class="bx bx-chevron-right" aria-hidden="true"></i></a>
+                                    <a href="?pageIndex=17" title="마지막 페이지로 이동" class="jump" onclick="linkPage(17);return false; ">마지막<i class="bx bx-chevrons-right" aria-hidden="true"></i></a>
+                                </article>
+                            </div>
+        
+                            <!--E:SKIN-->
+                    </article>
 
                 </div>
 

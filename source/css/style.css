@@ -2152,6 +2152,81 @@ div.input dl dd div.total-result {
   }
 }
 
+ul.table {
+  list-style: none;
+  padding: 0;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  ul.table {
+    margin: 0 0 40px;
+    font-size: 0;
+  }
+}
+
+ul.table li {
+  border-bottom: 1px solid #ccc;
+  padding: 14px 0;
+}
+
+@media (min-width: 1200px) {
+  ul.table li {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  ul.table li.half {
+    width: 50%;
+  }
+}
+
+ul.table li span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  ul.table li span {
+    line-height: 60px;
+    width: 240px;
+    background: #f5f5f5;
+    padding: 0 30px;
+  }
+}
+
+ul.table li u {
+  float: right;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  ul.table li u {
+    float: none;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 30px;
+  }
+}
+
+ul.table li u.block {
+  float: none;
+  display: block;
+  margin: 4px 0 0;
+}
+
+@media (min-width: 1200px) {
+  ul.table li u.block {
+    float: none;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
 /* basic */
 html {
   min-width: 320px;
@@ -3914,9 +3989,9 @@ body div#content.sub section.sub-content div.container article.mypage-main ul {
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container article.mypage-main ul li {
     vertical-align: top;
-    width: calc((100% - 120px) / 3);
+    width: calc((100% - 90px) / 4);
     display: inline-block;
-    margin-right: 60px;
+    margin-right: 30px;
   }
   body div#content.sub section.sub-content div.container article.mypage-main ul li:last-child {
     margin-right: 0;
@@ -3934,7 +4009,7 @@ body div#content.sub section.sub-content div.container article.mypage-main ul li
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container article.mypage-main ul li a {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
   }
 }
@@ -3962,6 +4037,10 @@ body div#content.sub section.sub-content div.container article.mypage-main ul li
   color: #699b00;
 }
 
+body div#content.sub section.sub-content div.container article.mypage-main ul li a.test i {
+  color: #423B84;
+}
+
 body div#content.sub section.sub-content div.container article.mypage-main ul li a.consulting i {
   color: #d67622;
 }
@@ -3973,7 +4052,7 @@ body div#content.sub section.sub-content div.container article.mypage-main ul li
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container article.mypage-main ul li a h4 {
-    font-size: 28px;
+    font-size: 22px;
     margin: 0 0 20px;
   }
 }
@@ -4544,6 +4623,357 @@ body div#content.sub section.sub-content div.container article.reservation-list 
     margin: -5px 15px 0;
     top: 0;
   }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset {
+  border: 1px solid #bbbbbb;
+  background: #fafafa;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset {
+    padding: 20px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset label {
+  display: inline-block;
+  width: 80px;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 10px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset label {
+    font-size: 18px;
+    width: auto;
+    padding: 0 20px 0 20px;
+    text-align: left;
+    line-height: 42px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset input[type="text"] {
+  border: 1px solid #ccc;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 0 10px;
+  width: calc(50% - 50px);
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset input[type="text"] {
+    font-size: 16px;
+    width: 170px;
+    height: 42px;
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset u {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 40px;
+  width: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset u {
+    line-height: 42px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  width: calc(100% - 162px);
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline {
+    width: 160px;
+    margin-bottom: 0;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline select {
+    height: 42px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline::before, body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body div#content.sub section.sub-content div.container article.support-list fieldset button {
+  width: 72px;
+  height: 40px;
+  border: none;
+  vertical-align: top;
+  color: #fff;
+  font-size: 16px;
+  background: #1f222d;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list fieldset button {
+    height: 42px;
+    width: 90px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.sort {
+    margin: 50px 0 20px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li {
+  display: inline-block;
+  font-size: 14px;
+  width: 50%;
+  vertical-align: top;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.sort li {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:first-child {
+  line-height: 34px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.sort li:first-child {
+    line-height: 42px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:first-child strong {
+  color: #1c7cc2;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child {
+  text-align: right;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline {
+    margin-bottom: 0;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 96px;
+  height: 34px;
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  border: 1px solid #cccccc;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline select::-ms-expand {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline select {
+    height: 42px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline::before, body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  display: block;
+  width: 8px;
+  height: 1px;
+  background: #999999;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 12px;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline:focus-within::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.sort li:last-child span.select-outline:focus-within::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #3d3d3d;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.list {
+    border: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.list li {
+    display: inline-block;
+    width: calc((100% - 40px) / 3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  body div#content.sub section.sub-content div.container article.support-list ul.list li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list li a {
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.list li a {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list li a p {
+  margin: 0;
+  position: relative;
+  line-height: 32px;
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list li a p u {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.list li a p u {
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list li a p span {
+  display: inline-block;
+  font-size: 14px;
+  background: #efefef;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.support-list ul.list li a p span {
+    font-size: 16px;
+    width: 120px;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.support-list ul.list li a p.num u {
+  color: #0075bc;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 body div#content.sub section.sub-content div.container article.login {
