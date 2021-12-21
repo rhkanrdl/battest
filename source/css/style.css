@@ -9726,7 +9726,7 @@ body div#content.sub section.sub-content div.container article.board-view-tools 
   }
 }
 
-body div#content.sub section.sub-content div.container article.board-view-tools a.write {
+body div#content.sub section.sub-content div.container article.board-view-tools button.write {
   position: absolute;
   display: block;
   background: #0066CC;
@@ -9740,7 +9740,7 @@ body div#content.sub section.sub-content div.container article.board-view-tools 
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-content div.container article.board-view-tools a.write {
+  body div#content.sub section.sub-content div.container article.board-view-tools button.write {
     line-height: 46px;
     font-size: 18px;
   }
