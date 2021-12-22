@@ -774,7 +774,6 @@ button {
 @media (min-width: 1200px) {
   .modal .modal-content {
     width: 500px;
-    max-height: 90vh;
   }
 }
 
