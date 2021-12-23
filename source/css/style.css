@@ -3152,40 +3152,33 @@ body div#content.main section.main-issue {
   font-size: 0;
 }
 
-body div#content.main section.main-issue div.slider button.slick-arrow {
-  display: none !important;
-}
-
-body div#content.main section.main-issue div.slider div.slide {
-  display: inline-block;
-  height: 100vh;
-  min-height: -webkit-fill-available;
-  min-height: -moz-available;
-  min-height: fill-available;
+body div#content.main section.main-issue div.slide {
+  display: block;
+  height: 530px;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide {
-    min-height: 900px;
+  body div#content.main section.main-issue div.slide {
+    height: 620px;
   }
 }
 
-body div#content.main section.main-issue div.slider div.slide img {
+body div#content.main section.main-issue div.slide img {
   display: none;
 }
 
-body div#content.main section.main-issue div.slider div.slide h3 {
+body div#content.main section.main-issue div.slide h3 {
   position: relative;
+  z-index: 100;
   font-size: 20px;
   letter-spacing: -1px;
-  margin: 40vh auto 0;
+  margin: 300px auto 0;
   padding: 20px 10px;
   width: 80%;
   display: inline-block;
   color: #fff;
   border-top: 1px solid #fff;
   font-weight: 600;
-  opacity: 0;
   -webkit-transition: all 1.5s linear;
   transition: all 1.5s linear;
   -webkit-transition-delay: 0.5s;
@@ -3193,38 +3186,30 @@ body div#content.main section.main-issue div.slider div.slide h3 {
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide h3 {
+  body div#content.main section.main-issue div.slide h3 {
     width: 1160px;
     padding: 30px 10px;
     font-size: 45px;
   }
 }
 
-body div#content.main section.main-issue div.slider div.slide h3 span {
+body div#content.main section.main-issue div.slide h3 span {
   display: block;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide h3 span {
+  body div#content.main section.main-issue div.slide h3 span {
     display: inline;
   }
 }
 
-body div#content.main section.main-issue div.slider div.slide h3::before {
+body div#content.main section.main-issue div.slide h3::before {
   content: "";
-  display: block;
   position: absolute;
+  display: block;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: #ccc;
-}
-
-body div#content.main section.main-issue div.slider div.slide.slick-active h3 {
-  opacity: 1;
-}
-
-body div#content.main section.main-issue div.slider div.slide.slide1 h3::before {
   width: 260px;
   height: 45px;
   top: -65px;
@@ -3232,137 +3217,10 @@ body div#content.main section.main-issue div.slider div.slide.slide1 h3::before 
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide.slide1 h3::before {
+  body div#content.main section.main-issue div.slide h3::before {
     width: 750px;
     height: 129px;
     top: -159px;
-  }
-}
-
-body div#content.main section.main-issue div.slider div.slide.slide2 h3::before {
-  width: 112px;
-  height: 45px;
-  top: -65px;
-  background: url(../images/img-issue02.svg) no-repeat center bottom/100% auto;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide.slide2 h3::before {
-    width: 324px;
-    height: 129px;
-    top: -159px;
-  }
-}
-
-body div#content.main section.main-issue div.slider div.slide.slide3 h3::before {
-  width: 130px;
-  height: 45px;
-  top: -65px;
-  background: url(../images/img-issue03.svg) no-repeat center bottom/100% auto;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide.slide3 h3::before {
-    width: 424px;
-    height: 146px;
-    top: -176px;
-  }
-}
-
-body div#content.main section.main-issue div.slider div.slide.slide4 h3::before {
-  width: 260px;
-  height: 61px;
-  top: -61px;
-  background: url(../images/img-issue04.svg) no-repeat center bottom/100% auto;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide.slide4 h3::before {
-    width: 615px;
-    height: 143px;
-    top: -143px;
-  }
-}
-
-body div#content.main section.main-issue div.slider div.slide.slide5 h3::before {
-  width: 108px;
-  height: 45px;
-  top: -65px;
-  background: url(../images/img-issue05.svg) no-repeat center bottom/100% auto;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider div.slide.slide5 h3::before {
-    width: 308px;
-    height: 129px;
-    top: -159px;
-  }
-}
-
-body div#content.main section.main-issue div.slider ul.slick-dots {
-  position: absolute;
-  top: 55vh;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-}
-
-body div#content.main section.main-issue div.slider ul.slick-dots li {
-  display: inline-block;
-  margin: 0 1px;
-  vertical-align: bottom;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider ul.slick-dots li {
-    margin: 0 4px 0 0;
-  }
-}
-
-body div#content.main section.main-issue div.slider ul.slick-dots li button {
-  border: none;
-  width: 30px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slider ul.slick-dots li button {
-    width: 66px;
-    height: 3px;
-  }
-}
-
-body div#content.main section.main-issue div.slider ul.slick-dots li.slick-active button {
-  background: white;
-}
-
-body div#content.main section.main-issue button.issue-next {
-  position: absolute;
-  bottom: 20vh;
-  left: 50%;
-  margin: 0;
-  border: none;
-  background: none;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: 0;
-}
-
-body div#content.main section.main-issue button.issue-next i {
-  font-size: 60px;
-  color: #fff;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue button.issue-next i {
-    font-size: 100px;
   }
 }
 
@@ -3383,7 +3241,7 @@ body div#content.main section.main-issue div.contact {
     left: 50%;
     width: 400px;
     margin-left: -200px;
-    bottom: 300px;
+    bottom: 100px;
   }
 }
 

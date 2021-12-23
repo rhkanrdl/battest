@@ -645,223 +645,71 @@ body {
         overflow: hidden;
         font-size: 0;
 
-        div.slider {
-          button.slick-arrow {
-            display: none !important;
+        div.slide {
+          display: block;
+          height: 530px;
+          // @include ani(1s);
+
+          @media (min-width: $screen-size-pc) {
+            height:620px;
           }
 
-          div.slide {
+          img {
+            display: none;
+          }
+
+          h3 {
+            position: relative;
+            z-index:100;
+            font-size: 20px;
+            letter-spacing: -1px;
+            margin: 300px auto 0;
+            padding: 20px 10px;
+            width: 80%;
             display: inline-block;
-            height: 100vh;
-            min-height: -webkit-fill-available;
-            min-height: fill-available;
-            // @include ani(1s);
-
-            @media (min-width: $screen-size-pc) {
-              min-height: 900px;
-            }
-
-            img {
-              display: none;
-            }
-
-            h3 {
-              position: relative;
-              font-size: 20px;
-              letter-spacing: -1px;
-              margin: 40vh auto 0;
-              padding: 20px 10px;
-              width: 80%;
-              display: inline-block;
-              color: #fff;
-              border-top: 1px solid #fff;
-              font-weight: 600;
-              opacity: 0;
-              @include ani(1.5s);
-              transition-delay: 0.5s;
-
-              @media (min-width: $screen-size-pc) {
-                width: 1160px;
-                padding: 30px 10px;
-                font-size: 45px;
-              }
-
-              span {
-                display: block;
-
-                @media (min-width: $screen-size-pc) {
-                  display: inline;
-                }
-              }
-
-              &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                background: #ccc;
-              }
-            }
-
-            &.slick-active {
-              h3 {
-                opacity: 1;
-              }
-            }
-
-            &.slide1 {
-              h3 {
-                &::before {
-                  width: 260px;
-                  height: 45px;
-                  top: -65px;
-                  background: url(../images/img-issue01.svg) no-repeat center
-                  bottom / 100% auto;
-
-                  @media (min-width: $screen-size-pc) {
-                    width: 750px;
-                    height: 129px;
-                    top: -159px;
-                  }
-                }
-              }
-            }
-
-            &.slide2 {
-              h3 {
-                &::before {
-                  width: 112px;
-                  height: 45px;
-                  top: -65px;
-                  background: url(../images/img-issue02.svg) no-repeat center
-                  bottom / 100% auto;
-
-                  @media (min-width: $screen-size-pc) {
-                    width: 324px;
-                    height: 129px;
-                    top: -159px;
-                  }
-                }
-              }
-            }
-
-            &.slide3 {
-              h3 {
-                &::before {
-                  width: 130px;
-                  height: 45px;
-                  top: -65px;
-                  background: url(../images/img-issue03.svg) no-repeat center
-                  bottom / 100% auto;
-
-                  @media (min-width: $screen-size-pc) {
-                    width: 424px;
-                    height: 146px;
-                    top: -176px;
-                  }
-                }
-              }
-            }
-
-            &.slide4 {
-              h3 {
-                &::before {
-                  width: 260px;
-                  height: 61px;
-                  top: -61px;
-                  background: url(../images/img-issue04.svg) no-repeat center
-                  bottom / 100% auto;
-
-                  @media (min-width: $screen-size-pc) {
-                    width: 615px;
-                    height: 143px;
-                    top: -143px;
-                  }
-                }
-              }
-            }
-
-            &.slide5 {
-              h3 {
-                &::before {
-                  width: 108px;
-                  height: 45px;
-                  top: -65px;
-                  background: url(../images/img-issue05.svg) no-repeat center
-                  bottom / 100% auto;
-
-                  @media (min-width: $screen-size-pc) {
-                    width: 308px;
-                    height: 129px;
-                    top: -159px;
-                  }
-                }
-              }
-            }
-          }
-
-          ul.slick-dots {
-            position: absolute;
-            top: 55vh;
-            left: 50%;
-            transform: translateX(-50%);
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            font-size: 0;
-
-            li {
-              display: inline-block;
-              margin: 0 1px;
-              vertical-align: bottom;
-
-              @media (min-width: $screen-size-pc) {
-                margin: 0 4px 0 0;
-              }
-
-              button {
-                border: none;
-                width: 30px;
-                height: 2px;
-                background: rgba(255, 255, 255, 0.3);
-
-                @include ani();
-
-                @media (min-width: $screen-size-pc) {
-                  width: 66px;
-                  height: 3px;
-                }
-              }
-
-              &.slick-active {
-                button {
-                  background: rgba(255, 255, 255, 1);
-                }
-              }
-            }
-          }
-        }
-
-        button.issue-next {
-          position: absolute;
-          bottom: 20vh;
-          left: 50%;
-          margin: 0;
-          border: none;
-          background: none;
-          transform: translateX(-50%);
-          padding: 0;
-
-          i {
-            font-size: 60px;
             color: #fff;
+            border-top: 1px solid #fff;
+            font-weight: 600;
+            @include ani(1.5s);
+            transition-delay: 0.5s;
 
             @media (min-width: $screen-size-pc) {
-              font-size: 100px;
+              width: 1160px;
+              padding: 30px 10px;
+              font-size: 45px;
+            }
+
+            span {
+              display: block;
+
+              @media (min-width: $screen-size-pc) {
+                display: inline;
+              }
+            }
+
+            &::before {
+              content: "";
+              position:absolute;
+              display: block;
+              left: 50%;
+              transform: translateX(-50%);
+
+                width: 260px;
+                height: 45px;
+                top: -65px;
+                background: url(../images/img-issue01.svg) no-repeat center
+                bottom / 100% auto;
+
+                @media (min-width: $screen-size-pc) {
+                  width: 750px;
+                  height: 129px;
+                  top: -159px;
+
+              }
             }
           }
         }
+
 
         div.contact {
           position:absolute;
@@ -878,7 +726,7 @@ body {
             left:50%;
             width:400px;
             margin-left:-200px;
-            bottom:300px;
+            bottom:100px;
 
           }
 

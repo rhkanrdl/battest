@@ -21,18 +21,18 @@ $(function(){
     });
 
     /* ----- slider ----- */
-    var $mainIssue = $("section.main-issue div.slider");
+    // var $mainIssue = $("section.main-issue div.slider");
 
-    $mainIssue.slick({
+    // $mainIssue.slick({
 
-        // arrows:false,
-        autoplay:true,
-        autoplaySpeed:4000,
-        fade:true,
-        speed: 1000,
-        nextArrow: ".issue-next",
+    //     // arrows:false,
+    //     autoplay:true,
+    //     autoplaySpeed:4000,
+    //     fade:true,
+    //     speed: 1000,
+    //     nextArrow: ".issue-next",
     
-    });
+    // });
     
     var $mainNews = $("section.main-news div.slider");
 
