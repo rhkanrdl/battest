@@ -219,6 +219,11 @@ body {
             margin-right:5px;
             font-size: 22px;
           }
+
+          &.admin {
+            background:transparent;
+            color:#222;
+          }
         }
 
         button.close {

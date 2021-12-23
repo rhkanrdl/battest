@@ -102,11 +102,11 @@ function menu() {
     });
 
     $("button.main-menu").on("click", function () {
-        $("nav#main-menu").toggleClass("on");
+        $("nav#main-menu").addClass("on");
     });
 
     $("nav#main-menu button.close").on("click", function () {
-        $("nav#main-menu").toggleClass("on");
+        $("nav#main-menu").removeClass("on");
     });
 
     $("nav#main-menu h3 a").on("click", function (e) {

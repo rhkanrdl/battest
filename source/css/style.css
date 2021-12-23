@@ -2809,6 +2809,10 @@ body header.on .container h1 a::before {
     margin-right: 5px;
     font-size: 22px;
   }
+  body nav#main-menu div.tools a.admin {
+    background: transparent;
+    color: #222;
+  }
   body nav#main-menu div.tools button.close {
     position: absolute;
     right: 0;
