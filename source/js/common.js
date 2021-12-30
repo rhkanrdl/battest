@@ -158,9 +158,9 @@ function coverimage() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
 
-    $(".sub-content .equipment-view p.big-image").each(function(){
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    });
+    // $(".sub-content .equipment-view p.big-image").each(function(){
+    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    // });
 }
 
 /* ----- main tab ----- */ 

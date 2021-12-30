@@ -7396,6 +7396,7 @@ body div#content.sub section.sub-content div.container article.equipment-view {
   body div#content.sub section.sub-content div.container article.equipment-view div.head {
     padding: 0 0 0 470px;
     position: relative;
+    min-height: 470px;
   }
 }
 
@@ -7431,7 +7432,7 @@ body div#content.sub section.sub-content div.container article.equipment-view di
 body div#content.sub section.sub-content div.container article.equipment-view div.head p.big-image {
   margin: 0 0 10px;
   width: 100%;
-  height: 220px;
+  background: #222;
 }
 
 @media (min-width: 1200px) {
@@ -7440,12 +7441,22 @@ body div#content.sub section.sub-content div.container article.equipment-view di
     left: 0;
     top: 0;
     width: 410px;
-    height: 300px;
+    height: 400px;
   }
 }
 
 body div#content.sub section.sub-content div.container article.equipment-view div.head p.big-image img {
-  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.equipment-view div.head p.big-image img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-height: 100%;
+  }
 }
 
 body div#content.sub section.sub-content div.container article.equipment-view div.head ul {
@@ -7518,7 +7529,7 @@ body div#content.sub section.sub-content div.container article.equipment-view di
     right: auto;
     bottom: auto;
     left: 20px;
-    top: 508px;
+    top: 580px;
     width: 410px;
     background: none;
     padding: 0;
@@ -7528,14 +7539,13 @@ body div#content.sub section.sub-content div.container article.equipment-view di
 body div#content.sub section.sub-content div.container article.equipment-view div.big-button button {
   font-size: 20px;
   height: 56px;
-  width: calc(50% - 6px);
+  width: 100%;
   border: 1px solid transparent;
   color: #fff;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content div.container article.equipment-view div.big-button button {
-    width: 100%;
     height: 64px;
     font-size: 22px;
   }
