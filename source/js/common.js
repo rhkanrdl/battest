@@ -34,20 +34,20 @@ $(function(){
     
     // });
     
-    var $mainNews = $("section.main-news div.slider");
+    // var $mainNews = $("section.main-news div.slider");
 
-    $mainNews.slick({
+    // $mainNews.slick({
 
-        arrows:false,
-        autoplay:true,
-        autoplaySpeed:4000,
-        speed: 1000,
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        vertical: true,
+    //     arrows:false,
+    //     autoplay:true,
+    //     autoplaySpeed:4000,
+    //     speed: 1000,
+    //     dots: false,
+    //     infinite: true,
+    //     slidesToShow: 2,
+    //     vertical: true,
     
-    });
+    // });
 
     var $mainEquipment = $("section.main-equipment div.slider");
     $mainEquipment.slick({
@@ -139,7 +139,7 @@ function coverimage() {
 
 
     $(".main-issue .slide").each(function(){
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center bottom / cover");
     });
 
     $(".main-content .news p.image").each(function(){

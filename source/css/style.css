@@ -399,6 +399,13 @@ th {
 
 @font-face {
   font-family: 'S-CoreDream';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
   src: url("../font/S-CoreDream-4Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -3159,7 +3166,7 @@ body div#content.main section.main-issue div.slide {
 
 @media (min-width: 1200px) {
   body div#content.main section.main-issue div.slide {
-    height: 620px;
+    height: 802px;
   }
 }
 
@@ -3170,57 +3177,33 @@ body div#content.main section.main-issue div.slide img {
 body div#content.main section.main-issue div.slide h3 {
   position: relative;
   z-index: 100;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -1px;
-  margin: 300px auto 0;
-  padding: 20px 10px;
+  margin: 200px auto 0;
   width: 80%;
   display: inline-block;
   color: #fff;
-  border-top: 1px solid #fff;
-  font-weight: 600;
-  -webkit-transition: all 1.5s linear;
-  transition: all 1.5s linear;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  font-weight: 200;
+  word-break: keep-all;
 }
 
 @media (min-width: 1200px) {
   body div#content.main section.main-issue div.slide h3 {
+    margin: 280px auto 0;
     width: 1160px;
-    padding: 30px 10px;
-    font-size: 45px;
+    font-size: 36px;
   }
 }
 
 body div#content.main section.main-issue div.slide h3 span {
   display: block;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 @media (min-width: 1200px) {
   body div#content.main section.main-issue div.slide h3 span {
-    display: inline;
-  }
-}
-
-body div#content.main section.main-issue div.slide h3::before {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 260px;
-  height: 45px;
-  top: -65px;
-  background: url(../images/img-issue01.svg) no-repeat center bottom/100% auto;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-issue div.slide h3::before {
-    width: 750px;
-    height: 129px;
-    top: -159px;
+    font-size: 54px;
   }
 }
 
@@ -3254,72 +3237,56 @@ body div#content.main section.main-issue div.contact strong {
 body div#content.main section.main-news {
   position: relative;
   z-index: 1000;
-}
-
-body div#content.main section.main-news div.container {
-  position: absolute;
-  top: -60px;
-  height: 60px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 800;
-  background: #35374b;
+  text-align: left;
+  height: 120px;
+  background: #1C1E2A;
   padding: 0 20px;
   overflow: hidden;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-news div.container {
-    height: 90px;
-    top: -90px;
+  body div#content.main section.main-news {
+    position: absolute;
+    width: 600px;
+    height: 252px;
+    top: 676px;
+    left: 50%;
+    margin-left: -600px;
     padding: 0 30px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
   }
 }
 
-body div#content.main section.main-news div.container h3 {
+body div#content.main section.main-news h3 {
   font-size: 22px;
   color: #fff;
-  margin: 16px 0 0;
+  margin: 16px 0 10px;
   font-weight: 600;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-news div.container h3 {
-    margin: 20px 0 0;
+  body div#content.main section.main-news h3 {
+    margin: 28px 0 24px;
     font-size: 34px;
   }
 }
 
-body div#content.main section.main-news div.container div.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0 20px 0 120px;
-}
-
-@media (min-width: 1200px) {
-  body div#content.main section.main-news div.container div.slider {
-    padding: 0 30px 0 180px;
-  }
-}
-
-body div#content.main section.main-news div.container div.slider div.slide a {
+body div#content.main section.main-news div.slider div.slide a {
   display: block;
-  line-height: 60px;
   font-size: 14px;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-news div.container div.slider div.slide a {
-    font-size: 22px;
-    line-height: 90px;
+  body div#content.main section.main-news div.slider div.slide a {
+    font-size: 18px;
+    margin-bottom: 12px;
   }
 }
 
-body div#content.main section.main-news div.container div.slider div.slide a span {
+body div#content.main section.main-news div.slider div.slide a span {
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 80px);
@@ -3330,12 +3297,12 @@ body div#content.main section.main-news div.container div.slider div.slide a spa
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-news div.container div.slider div.slide a span {
-    width: calc(100% - 100px);
+  body div#content.main section.main-news div.slider div.slide a span {
+    width: 100%;
   }
 }
 
-body div#content.main section.main-news div.container div.slider div.slide a i {
+body div#content.main section.main-news div.slider div.slide a i {
   display: inline-block;
   text-align: right;
   width: 80px;
@@ -3344,14 +3311,135 @@ body div#content.main section.main-news div.container div.slider div.slide a i {
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-news div.container div.slider div.slide a i {
+  body div#content.main section.main-news div.slider div.slide a i {
+    text-align: left;
     width: 100px;
+    font-size: 14px;
+  }
+}
+
+body div#content.main section.other-site {
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site {
+    position: absolute;
+    width: 600px;
+    height: 252px;
+    top: 676px;
+    left: 50%;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+
+body div#content.main section.other-site a {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  font-size: 14px;
+  padding: 50px 0 10px;
+  background: #003D83;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site a {
+    height: 126px;
     font-size: 16px;
+    padding: 80px 0 0;
+  }
+}
+
+body div#content.main section.other-site a:nth-of-type(2), body div#content.main section.other-site a:nth-of-type(3) {
+  background: #004BA2;
+}
+
+body div#content.main section.other-site a.zeus::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 38px;
+  width: 84px;
+  height: 24px;
+  background: url(../images/logo-zeus.svg) no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site a.zeus::before {
+    width: 106px;
+    height: 30px;
+    bottom: 58px;
+  }
+}
+
+body div#content.main section.other-site a.jeus::before {
+  content: "JEUS";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site a.jeus::before {
+    font-size: 34px;
+    bottom: 50px;
+  }
+}
+
+body div#content.main section.other-site a.kier::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 38px;
+  width: 37px;
+  height: 30px;
+  background: url(../images/logo-kier.svg) no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site a.kier::before {
+    width: 59px;
+    height: 47.6px;
+    bottom: 58px;
+  }
+}
+
+body div#content.main section.other-site a.life::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 38px;
+  width: 65px;
+  height: 24px;
+  background: url(../images/logo-2nd.svg) no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.other-site a.life::before {
+    width: 84px;
+    height: 32px;
+    bottom: 58px;
   }
 }
 
 body div#content.main section.main-links {
-  background: #4c5053;
+  background: #393939;
 }
 
 body div#content.main section.main-links div.container {
@@ -3361,7 +3449,8 @@ body div#content.main section.main-links div.container {
 
 @media (min-width: 1200px) {
   body div#content.main section.main-links div.container {
-    padding: 40px 0;
+    padding: 170px 0 0;
+    height: 305px;
   }
 }
 
@@ -3389,7 +3478,7 @@ body div#content.main section.main-links div.container a i {
 
 @media (min-width: 1200px) {
   body div#content.main section.main-links div.container a i {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
@@ -6099,6 +6188,36 @@ body div#content.sub section.sub-content div.container article.sign dl input.wit
   }
 }
 
+body div#content.sub section.sub-content div.container article.sign p.agree-check {
+  padding: 20px 0;
+  text-align: center;
+}
+
+body div#content.sub section.sub-content div.container article.sign p.agree-check span {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-content div.container article.sign p.agree-check span {
+    width: auto;
+  }
+}
+
+body div#content.sub section.sub-content div.container article.sign p.agree-check span input {
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+}
+
+body div#content.sub section.sub-content div.container article.sign p.agree-check span label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 0 4px;
+}
+
 body div#content.sub section.sub-content div.container article.sign button.btn.main {
   border: none;
   width: 100%;
@@ -7859,6 +7978,8 @@ body div#content.sub section.sub-content div.container article.equipment-view dl
   body div#content.sub section.sub-content div.container article.sub-cert {
     padding: 40px 0;
     position: relative;
+  }
+  body div#content.sub section.sub-content div.container article.sub-cert.bg {
     background: url(../images/arrowmap.png) no-repeat left 170px top 90px;
   }
 }
@@ -7953,6 +8074,7 @@ body div#content.sub section.sub-content div.container article.sub-cert div.text
 body div#content.sub section.sub-content div.container article.sub-cert div.list {
   border-top: 2px solid #222;
   border-bottom: 1px solid #ccc;
+  margin: 0 0 30px;
 }
 
 body div#content.sub section.sub-content div.container article.sub-cert div.list p {

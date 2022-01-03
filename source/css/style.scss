@@ -648,10 +648,9 @@ body {
         div.slide {
           display: block;
           height: 530px;
-          // @include ani(1s);
 
           @media (min-width: $screen-size-pc) {
-            height:620px;
+            height:802px;
           }
 
           img {
@@ -661,52 +660,32 @@ body {
           h3 {
             position: relative;
             z-index:100;
-            font-size: 20px;
+            font-size: 16px;
             letter-spacing: -1px;
-            margin: 300px auto 0;
-            padding: 20px 10px;
+            margin: 200px auto 0;
             width: 80%;
             display: inline-block;
             color: #fff;
-            border-top: 1px solid #fff;
-            font-weight: 600;
-            @include ani(1.5s);
-            transition-delay: 0.5s;
+            font-weight: 200;
+            word-break:keep-all;
 
             @media (min-width: $screen-size-pc) {
+
+              margin:280px auto 0;
               width: 1160px;
-              padding: 30px 10px;
-              font-size: 45px;
+              font-size: 36px;
             }
 
             span {
               display: block;
+              font-weight: 600;
+              font-size:20px;
 
               @media (min-width: $screen-size-pc) {
-                display: inline;
+                font-size:54px;
               }
             }
 
-            &::before {
-              content: "";
-              position:absolute;
-              display: block;
-              left: 50%;
-              transform: translateX(-50%);
-
-                width: 260px;
-                height: 45px;
-                top: -65px;
-                background: url(../images/img-issue01.svg) no-repeat center
-                bottom / 100% auto;
-
-                @media (min-width: $screen-size-pc) {
-                  width: 750px;
-                  height: 129px;
-                  top: -159px;
-
-              }
-            }
           }
         }
 
@@ -742,56 +721,53 @@ body {
         position: relative;
         z-index:1000;
 
-        div.container {
-          position: absolute;
-          top: -60px;
-          height: 60px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 800;
-          background: #35374b;
+        text-align:left;
+          height: 120px;
+          background: #1C1E2A;
           padding: 0 20px;
           overflow: hidden;
 
           @media (min-width: $screen-size-pc) {
-            height: 90px;
-            top: -90px;
+            position:absolute;
+            width:600px;
+            height: 252px;
+            top: 676px;
+            left:50%;
+            margin-left:-600px;
             padding: 0 30px;
+            @include drop-shadow(
+              $x: 0,
+              $y: 5px,
+              $blur: 10px,
+              $spread: 0,
+              $alpha: 0.16
+            );
           }
 
           h3 {
             font-size: 22px;
             color: #fff;
-            margin: 16px 0 0;
+            margin: 16px 0 10px;
             font-weight: 600;
 
             @media (min-width: $screen-size-pc) {
-              margin: 20px 0 0;
+              margin: 28px 0 24px;
               font-size: 34px;
             }
           }
 
           div.slider {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 0 20px 0 120px;
-
-            @media (min-width: $screen-size-pc) {
-              padding: 0 30px 0 180px;
-            }
 
             div.slide {
               a {
                 display: block;
-                line-height: 60px;
                 font-size: 14px;
                 color: #fff;
+                margin-bottom:10px;
 
                 @media (min-width: $screen-size-pc) {
-                  font-size: 22px;
-                  line-height: 90px;
+                  font-size: 18px;
+                  margin-bottom:12px;
                 }
 
                 span {
@@ -804,7 +780,7 @@ body {
                   white-space: nowrap;
 
                   @media (min-width: $screen-size-pc) {
-                    width: calc(100% - 100px);
+                    width: 100%;
                   }
                 }
 
@@ -816,10 +792,130 @@ body {
                   font-size: 12px;
 
                   @media (min-width: $screen-size-pc) {
+                    text-align:left;
                     width: 100px;
-                    font-size: 16px;
+                    font-size: 14px;
                   }
                 }
+              }
+            }
+          }
+      }
+
+      section.other-site {
+        font-size:0;
+
+        @media (min-width: $screen-size-pc) {
+          position:absolute;
+          width:600px;
+          height: 252px;
+          top: 676px;
+          left:50%;
+          @include drop-shadow(
+            $x: 0,
+            $y: 5px,
+            $blur: 10px,
+            $spread: 0,
+            $alpha: 0.16
+          );
+        }
+
+        a {
+          display:inline-block;
+          position:relative;
+          width:50%;
+          font-size:14px;
+          padding:50px 0 10px;
+          background:#003D83;
+          color:#fff;
+
+          @media (min-width: $screen-size-pc) {
+            height:126px;
+            font-size:16px;
+            padding:80px 0 0;
+          }
+  
+
+          &:nth-of-type(2),
+          &:nth-of-type(3)
+           {
+            background:#004BA2;
+          }
+
+          &.zeus {
+            &::before {
+              content:"";
+              display:block;
+              position:absolute;
+              left:50%;
+              transform:translateX(-50%);
+              bottom:38px;
+              width:84px;
+              height:24px;
+              background:url(../images/logo-zeus.svg) no-repeat center / 100% auto;
+
+              @media (min-width: $screen-size-pc) {
+                width:106px;
+                height:30px;
+                bottom:58px;
+              }
+            }
+          }
+
+          &.jeus {
+            &::before {
+              content:"JEUS";
+              display:block;
+              position:absolute;
+              left:50%;
+              transform:translateX(-50%);
+              bottom:30px;
+              font-weight:900;
+              font-size:28px;
+
+              @media (min-width: $screen-size-pc) {
+                font-size:34px;
+                bottom:50px;
+              }
+            }
+          }
+
+          &.kier {
+            &::before {
+              content:"";
+              display:block;
+              position:absolute;
+              left:50%;
+              transform:translateX(-50%);
+              bottom:38px;
+              width:37px;
+              height:30px;
+              background:url(../images/logo-kier.svg) no-repeat center / 100% auto;
+
+              @media (min-width: $screen-size-pc) {
+                width:59px;
+                height:47.6px;
+                bottom:58px;
+              }
+            }
+          }
+
+          &.life {
+            &::before {
+              content:"";
+              display:block;
+              position:absolute;
+              left:50%;
+              transform:translateX(-50%);
+              bottom:38px;
+              width:65px;
+              height:24px;
+              background:url(../images/logo-2nd.svg) no-repeat center / 100% auto;
+
+              @media (min-width: $screen-size-pc) {
+                width:84px;
+                height:32px;
+                bottom:58px;
               }
             }
           }
@@ -827,14 +923,15 @@ body {
       }
 
       section.main-links {
-        background: #4c5053;
+        background: #393939;
 
         div.container {
           padding: 30px 0 10px;
           text-align: center;
 
           @media (min-width: $screen-size-pc) {
-            padding: 40px 0;
+            padding: 170px 0 0;
+            height:305px;
           }
 
           a {
@@ -856,7 +953,7 @@ body {
               margin: 0 0 10px;
 
               @media (min-width: $screen-size-pc) {
-                font-size: 70px;
+                font-size: 60px;
               }
             }
           }
@@ -3462,6 +3559,35 @@ body {
               }
             }
 
+            p.agree-check {
+              padding:20px 0;
+              text-align:center;
+
+              span {
+                display:inline-block;
+                text-align:left;
+                margin:0 0 10px;
+                width:100%;
+
+                @media (min-width: $screen-size-pc) {
+                  width:auto;
+                }
+
+                input {
+                  vertical-align:top;
+                  width:18px;
+                  height:18px;
+                }
+  
+                label {
+                  display:inline-block;
+                  vertical-align:top;
+                  margin:0 10px 0 4px;
+                  
+                }
+              }
+            }
+
 
             button.btn.main {
               border:none;
@@ -5111,11 +5237,15 @@ body {
       
 
           article.sub-cert {
+
             @media (min-width: $screen-size-pc) {
               padding: 40px 0;
               position: relative;
-              background: url(../images/arrowmap.png) no-repeat left 170px top
-              90px;
+
+              &.bg {
+                background: url(../images/arrowmap.png) no-repeat left 170px top
+                90px;
+              }
             }
 
             h5 {
@@ -5207,6 +5337,7 @@ body {
             div.list {
               border-top: 2px solid #222;
               border-bottom: 1px solid #ccc;
+              margin:0 0 30px;
 
               p {
                 margin: 0;
