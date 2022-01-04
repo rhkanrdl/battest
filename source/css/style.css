@@ -3247,6 +3247,7 @@ body div#content.main section.main-news {
 @media (min-width: 1200px) {
   body div#content.main section.main-news {
     position: absolute;
+    z-index: 10;
     width: 600px;
     height: 252px;
     top: 676px;
@@ -3325,6 +3326,7 @@ body div#content.main section.other-site {
 @media (min-width: 1200px) {
   body div#content.main section.other-site {
     position: absolute;
+    z-index: 10;
     width: 600px;
     height: 252px;
     top: 676px;

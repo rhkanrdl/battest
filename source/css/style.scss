@@ -729,6 +729,7 @@ body {
 
           @media (min-width: $screen-size-pc) {
             position:absolute;
+            z-index:10;
             width:600px;
             height: 252px;
             top: 676px;
@@ -807,6 +808,7 @@ body {
 
         @media (min-width: $screen-size-pc) {
           position:absolute;
+          z-index:10;
           width:600px;
           height: 252px;
           top: 676px;
