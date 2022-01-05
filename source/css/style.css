@@ -1717,14 +1717,14 @@ button {
   font-size: 0;
 }
 
-.modal .modal-content div.inside ul.test-list li a {
+.modal .modal-content div.inside ul.test-list li {
   display: block;
   position: relative;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
 }
 
-.modal .modal-content div.inside ul.test-list li a p {
+.modal .modal-content div.inside ul.test-list li p {
   display: inline-block;
   width: 50%;
   margin: 0;
@@ -1732,12 +1732,12 @@ button {
   line-height: 32px;
 }
 
-.modal .modal-content div.inside ul.test-list li a p u {
+.modal .modal-content div.inside ul.test-list li p u {
   font-size: 13px;
   text-decoration: none;
 }
 
-.modal .modal-content div.inside ul.test-list li a p u button {
+.modal .modal-content div.inside ul.test-list li p u button {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1745,14 +1745,14 @@ button {
   padding: 0 20px;
 }
 
-.modal .modal-content div.inside ul.test-list li a p u input[type=checkbox] {
+.modal .modal-content div.inside ul.test-list li p u input[type=checkbox] {
   position: relative;
   top: 4px;
   width: 20px;
   height: 20px;
 }
 
-.modal .modal-content div.inside ul.test-list li a p span {
+.modal .modal-content div.inside ul.test-list li p span {
   display: inline-block;
   font-size: 14px;
   background: #efefef;
