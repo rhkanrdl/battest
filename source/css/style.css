@@ -773,7 +773,7 @@ button {
 .modal .modal-content {
   position: relative;
   background-color: #fff;
-  margin: 20vh auto 0;
+  margin: 10vh auto 0;
   padding: 20px;
   width: calc(100% - 20px);
 }
@@ -1348,6 +1348,106 @@ button {
   background: #efefef;
   color: #666;
   font-weight: 600;
+}
+
+.modal .modal-content div.inside div.survey p.text {
+  font-size: 14px;
+  margin: 20px 0;
+  word-break: keep-all;
+  line-height: 1.6;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.survey p.text {
+    font-size: 16px;
+  }
+}
+
+.modal .modal-content div.inside div.survey dl dt {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.survey dl dt {
+    font-size: 18px;
+  }
+}
+
+.modal .modal-content div.inside div.survey dl dd {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 10px 0;
+  font-size: 14px;
+  background: #efefef;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.survey dl dd {
+    padding: 20px 20px 10px;
+    margin: 0 0 30px;
+    font-size: 16px;
+  }
+}
+
+.modal .modal-content div.inside div.survey dl dd textarea {
+  height: 120px;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.modal .modal-content div.inside div.survey dl dd p {
+  margin: 0 0 10px;
+}
+
+.modal .modal-content div.inside div.survey dl dd p input {
+  margin: 0 4px 0 0;
+}
+
+.modal .modal-content div.inside div.survey dl dd p input:checked + label {
+  font-weight: 600;
+}
+
+.modal .modal-content div.inside div.survey dl dd.radio {
+  font-size: 0;
+  padding: 0;
+}
+
+.modal .modal-content div.inside div.survey dl dd.radio input {
+  display: none;
+}
+
+.modal .modal-content div.inside div.survey dl dd.radio label {
+  display: inline-block;
+  width: calc(100% / 5);
+  font-size: 11px;
+  letter-spacing: -1px;
+  border: 1px solid #ccc;
+  border-right: none;
+  text-align: center;
+  line-height: 30px;
+}
+
+.modal .modal-content div.inside div.survey dl dd.radio label:last-of-type {
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  .modal .modal-content div.inside div.survey dl dd.radio label {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+.modal .modal-content div.inside div.survey dl dd.radio input:checked + label {
+  background: #444;
+  color: #fff;
+  border-color: transparent;
 }
 
 .modal .modal-content div.inside div.company-search {
@@ -2590,7 +2690,13 @@ ul.table li u.block {
   }
 }
 
-ul.table li u a {
+ul.table li u p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul.table li u p a {
   color: #0075bc;
   text-decoration: underline;
 }
@@ -8385,6 +8491,12 @@ body div#content.sub section.sub-content div.container article.sub-support div.t
   body div#content.sub section.sub-content div.container article.sub-support div.table-outline p.info {
     display: none;
   }
+}
+
+body div#content.sub section.sub-content div.container p.file-info {
+  font-size: 14px;
+  margin: -20px 0 40px;
+  color: #0075bc;
 }
 
 body div#content.sub section.sub-content div.container article.board-info {
