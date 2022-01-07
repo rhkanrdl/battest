@@ -4153,40 +4153,47 @@ body {
                 border-top: 2px solid #3d3d3d;
                 font-size: 0;
       
-                @media (min-width: $screen-size-pc) {
-                  &::before {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 64px;
-                    background: #fafafa;
-                    border-bottom: 1px solid #ccc;
-                  }
-                }
-      
                 li {
-                  a {
                     display: block;
                     position: relative;
                     padding: 10px 0;
                     border-bottom:1px solid #ccc;
       
                     @media (min-width: $screen-size-pc) {
-                      padding: 20px 0;
-                      height: 60px;
+                      padding:15px 0;
+                    }
+
+                    &>button {
+                      position:absolute;
+                      right:0;
+                      top:10px;
+                      font-size:14px;
+                      background:#222;
+                      color:#fff;
+                      border:none;
+                      padding:5px 10px;
+
+                      &.find {
+                        right:50px;
+                        background:#0075bc;
+                      }
                     }
       
                     p {
-                      margin: 0;
+                      margin: 0 0 5px;
                       position: relative;
-                      line-height: 32px;
+                      
+                      padding:5px 0 5px 100px;
       
                       @media (min-width: $screen-size-pc) {
-                        position: absolute;
-                        font-size: 14px;
-                        top: 20px;
-                        line-height: 1;
+                        padding:10px 0 10px 130px;
+
+                        &.half {
+                          display:inline-block;
+                          width:50%;
+                        }
                       }
+  
       
                       u {
                         font-size: 13px;
@@ -4199,173 +4206,37 @@ body {
                           height:32px;
                           padding:0 20px;
       
-                          @media (min-width: $screen-size-pc) {
-                            position:relative;
-                            top:-6px;
-                          }
+                        }
+
+                        strong {
+                          font-weight:500;
+                          color:#0075bc;
+                          font-size:16px;
                         }
                       }
       
                       span {
                         display: inline-block;
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        bottom:0;
                         font-size: 14px;
                         background: #efefef;
                         width: 90px;
                         margin-right: 10px;
                         text-align: center;
+                        padding:5px 0;
       
                         @media (min-width: $screen-size-pc) {
-                          background: none;
-                          display: none;
-                          margin: 0;
-                        }
-                      }
-      
-                      &.button {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 0;
-                          width: 110px;
-                          text-align: center;
-                        }
-                      }
-      
-                      &.code {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 110px;
-                          width: 180px;
+                          padding:10px 0 10px;
+                          width:110px;
                         }
       
-                        u {
-                          color: #0075bc;
-                          font-weight: 600;
-                          @include ellipse;
-      
-                          @media (min-width: $screen-size-pc) {
-                            display: block;
-                            padding: 0 10px;
-                            text-align: center;
-                            font-size: 14px;
-                          }
-                        }
-                      }
-      
-                      &.rcode {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 290px;
-                          width: 180px;
-                          text-align: center;
-                        }
-                      }
-                      &.type {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 470px;
-                          width: 150px;
-                          text-align: center;
-                        }
-                      }
-                      &.part {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 620px;
-                          width: 150px;
-                          text-align: center;
-                        }
-                      }
-
-                      &.checklist {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 770px;
-                          width: 150px;
-                          text-align: center;
-                        }
-                      }
-
-                      &.find {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 920px;
-                          width: 110px;
-                          text-align: center;
-                        }
-                      }
-      
-                      &.price {
-                        @media (min-width: $screen-size-pc) {
-                          display: block;
-                          left: 1030px;
-                          width: 130px;
-                          text-align: center;
-                        }
-                      }
-                    }
-                  }
-      
-                  @media (min-width: $screen-size-pc) {
-                    &:first-child {
-                      a {
-                        h4,
-                        p {
-                          span {
-                            display: block;
-                            width: 100%;
-                            position: absolute;
-                            text-align: center;
-                            top: -60px;
-                            font-size: 14px;
-                            font-weight: 600;
-                          }
-                        }
-                      }
-                    }
-                  }
-      
-                  &.notice {
-                    background: #f3f3f3;
-      
-                    h4 {
-                      padding-left: 65px;
-      
-                      @media (min-width: $screen-size-pc) {
-                        padding-left: 0;
                       }
                     }
       
-                    a {
-                      p.num {
-                        display: block;
-                        text-align: center;
-                        position: absolute;
-                        left: 5px;
-                        top: 10px;
-                        padding: 2px 0;
       
-                        @media (min-width: $screen-size-pc) {
-                          display: inline-block;
-                          left: 0;
-                          top: 20px;
-                        }
-      
-                        u {
-                          display: block;
-                          background: #699b00;
-                          width: 50px;
-                          border-radius: 30px;
-                          color: #fff;
-      
-                          @media (min-width: $screen-size-pc) {
-                            padding: 5px 0;
-                            margin: -5px 15px 0;
-                            top: 0;
-                          }
-                        }
-                      }
-                    }
-                  }
                 }
               }
           }
