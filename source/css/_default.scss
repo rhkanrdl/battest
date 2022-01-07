@@ -1279,10 +1279,12 @@ button {
       
                     p {
 						display:inline-block;
+						position:relative;
 						width:50%;
-                      margin: 0;
+                      margin: 0 0 2px;
                       position: relative;
-                      line-height: 32px;
+					  padding:3px 0 3px 86px;
+					  letter-spacing:-0.5px;
       
       
                       u {
@@ -1299,22 +1301,27 @@ button {
                         }
 
 						input[type=checkbox] {
-							position:relative;
-							top:4px;
-							width:20px;
-							height:20px;
+							width:14px;
+							height:14px;
 						}
                       }
       
                       span {
                         display: inline-block;
-                        font-size: 14px;
+						position:absolute;
+						left:0;
+						top:0;
+						font-size:13px;
                         background: #efefef;
-                        width: 90px;
-                        margin-right: 10px;
+                        width: 76px;
+						padding:3px 0 3px;
                         text-align: center;
       
                       }
+
+					  &.full {
+						  width:100%;
+					  }
       
       
       
