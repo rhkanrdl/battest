@@ -5441,6 +5441,165 @@ body {
               }
             }
           }
+          article.sub-cert2 {
+
+            @media (min-width: $screen-size-pc) {
+              padding: 40px 0;
+              position: relative;
+
+              &.bg {
+                background: url(../images/arrowmap2.png) no-repeat left 170px top
+                90px;
+              }
+            }
+
+            h5 {
+              margin: 0 0 20px;
+              background: #0066cc;
+              color: #fff;
+              text-align: center;
+              line-height: 60px;
+              border-radius: 60px;
+              font-weight: 600;
+              font-size: 18px;
+
+              @media (min-width: $screen-size-pc) {
+                width: 350px;
+                line-height: 100px;
+                font-size: 22px;
+                margin: 0 0 101.4px;
+              }
+
+              &.gray {
+                background: #6c7982;
+              }
+
+              &.end {
+                background: #8abb2a;
+              }
+            }
+
+            div.text {
+              margin: 0 0 30px;
+
+              @media (min-width: $screen-size-pc) {
+                background: #ededed;
+                padding: 30px;
+                width: 758px;
+                position: absolute;
+                left: 390px;
+
+                &.text01 {
+                  top: 32px;
+                }
+
+                &.text02 {
+                  top: 234px;
+                }
+
+                &.text03 {
+                  top: 638px;
+                }
+
+                &.text04 {
+                  top: 926px;
+                }
+
+                &.text05 {
+                  top: 1252px;
+                }
+              }
+
+              strong {
+                display: block;
+                word-break: keep-all;
+                font-weight: 600;
+                margin: 0 0 10px;
+
+                @media (min-width: $screen-size-pc) {
+                  font-size: 18px;
+                }
+
+                p {
+                  margin:0;
+                }
+              }
+
+              span {
+                display: block;
+                position: relative;
+                word-break: keep-all;
+                padding: 0 0 0 14px;
+
+                &::before {
+                  content: "-";
+                  position: absolute;
+                  left: 0;
+                }
+              }
+            }
+
+            div.list {
+              border-top: 2px solid #222;
+              border-bottom: 1px solid #ccc;
+              margin:0 0 30px;
+
+              p {
+                margin: 0;
+                padding: 0;
+                font-size: 0;
+
+                strong {
+                  display: block;
+                  line-height: 70px;
+                  background: #efefef;
+                  text-align: center;
+                  border-bottom: 1px solid #ccc;
+                  font-size: 16px;
+
+                  @media (min-width: $screen-size-pc) {
+                    display: inline-block;
+                    width: 300px;
+                    vertical-align: top;
+                  }
+                }
+
+                u {
+                  display: block;
+                  padding: 30px 0;
+                  text-align: center;
+                  word-break: keep-all;
+                  text-decoration: none;
+                  border-bottom: 1px solid #ccc;
+                  font-size: 16px;
+
+                  @media (min-width: $screen-size-pc) {
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 0;
+                    line-height: 70px;
+                    width: calc(100% - 300px);
+                  }
+                }
+
+                &.box {
+                  padding: 20px;
+
+                  span {
+                    display: block;
+                    font-size: 16px;
+                    padding: 6px 0;
+
+                    @media (min-width: $screen-size-pc) {
+                      display: inline-block;
+                      width: 220px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
 
           article.sub-support {
             
