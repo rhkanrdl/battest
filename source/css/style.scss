@@ -824,16 +824,20 @@ body {
 
         a {
           display:inline-block;
+          vertical-align:top;
           position:relative;
           width:50%;
           font-size:14px;
-          padding:50px 0 10px;
+          padding:50px 5px 10px;
           background:#003D83;
           color:#fff;
+          overflow:hidden;
+          word-break:keep-all;
+          white-space:nowrap;
+          text-overflow:ellipsis;
 
           @media (min-width: $screen-size-pc) {
             height:126px;
-            font-size:16px;
             padding:80px 0 0;
           }
   
@@ -843,6 +847,8 @@ body {
            {
             background:#004BA2;
           }
+
+
 
           &.tp {
             &::before {
