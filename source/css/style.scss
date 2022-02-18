@@ -1733,10 +1733,24 @@ body {
             font-size: 20px;
             font-weight: 600;
             margin: 0 0 20px;
+            word-break:keep-all;
 
             @media (min-width: $screen-size-pc) {
               font-size: 26px;
               margin: 0 0 40px;
+            }
+
+            small {
+              font-size:16px;
+              font-weight:500;
+              display:block;
+              color:#666;
+
+              @media (min-width: $screen-size-pc) {
+                display:inline-block;
+                font-size:18px;
+                padding:0 0 0 20px;
+              }
             }
           }
 
@@ -5446,6 +5460,82 @@ body {
                 }
               }
             }
+
+
+
+
+            div.table-outline {
+              overflow-x: scroll;
+              margin:0 0 30px;
+
+              @media (min-width: $screen-size-pc) {
+                overflow-x: unset;
+                margin:0 0 50px;
+              }
+
+              table {
+                width: 100%;
+                min-width: 900px;
+                border-top: 2px solid #222;
+
+                thead {
+                  tr {
+                    th {
+                      background: #efefef;
+                      text-align: center;
+                      font-size: 16px;
+                      font-weight: 600;
+                      height: 70px;
+                      border-right: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+
+                      &:last-of-type {
+                        border-right: none;
+                      }
+                    }
+                  }
+                }
+
+                tbody {
+                  tr {
+                    th {
+                      background: #efefef;
+                      text-align: center;
+                      font-size: 16px;
+                      font-weight: 600;
+                      height: 70px;
+                      border-right: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+                      width:25%;
+                    }
+                    td {
+                      border-right: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+                      text-align: center;
+                      padding: 20px 0;
+                      width:25%;
+
+                      &:last-of-type {
+                        border-right: none;
+                      }
+
+                      p {
+                        margin: 0;
+                      }
+                    }
+                  }
+                }
+              }
+
+              p.info {
+                font-size: 14px;
+
+                @media (min-width: $screen-size-pc) {
+                  display: none;
+                }
+              }
+            }
+
           }
           article.sub-cert2 {
 
